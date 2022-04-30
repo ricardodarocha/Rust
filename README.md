@@ -45,6 +45,8 @@ I create endpoints in file routes.rs
 
 # Sumary by Subject
 
+The examples by subject are in \General Folder
+
 ## Variables
 
 ## Types
