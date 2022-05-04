@@ -4,7 +4,7 @@ A repository to study Rust from scratch
 
 # Intro
 
-Point of view analisys about the language, the benefits and what you can expect about.
+Point of view analisys about the language, the benefits and what you can expect of.
 
 # Hello World
 
