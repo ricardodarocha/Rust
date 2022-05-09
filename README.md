@@ -73,3 +73,12 @@ pub async fn echo(req_body: String) -> impl Responder {
 }
 ```
 
+# Loop expressions:
+
+Rust supports four loop expressions:
+- A **loop** expression denotes an infinite loop.
+- A **while** expression loops until a predicate is false.
+- A **while** let expression tests a pattern.
+- A **for** expression extracts values from an iterator, looping until the iterator is empty.
+All four types of loop support break expressions, continue expressions, and labels. Only loop supports evaluation to non-trivial values.
+
