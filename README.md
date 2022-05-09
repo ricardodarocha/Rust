@@ -125,7 +125,7 @@ for x in 1..11{ // 11 is not inclusive
       if x==5 {
          continue;
       }
-      ```
+```
 
 An example of a for loop over the contents of an array:
 
