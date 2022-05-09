@@ -90,10 +90,20 @@ for x in 1..11{ // 11 is not inclusive
 
 Loops in details [](https://github.com/ricardodarocha/Rust/blob/main/general/loopExpressions)
 
-      
+## Error Handling
+
+```Rust
+fn exit(x: i32) {
+    if x == 0 {
+        panic!("we got a 0");
+    }
+    println!("things are fine")
+}
+```
+
+Check [](https://github.com/ricardodarocha/Rust/blob/main/general/errorhandling.md)
 
 # Links
 
-The best Rust publications curated
-
-https://github.com/brson/rust-anthology/blob/master/master-list.md
+**github notebook**(Best Rust curated)[https://github.com/brson/rust-anthology/blob/master/master-list.md]
+**Video** (Error Handling)[https://www.youtube.com/watch?v=mhw-x5Q_-z0&t=195s]
