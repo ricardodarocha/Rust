@@ -183,3 +183,9 @@ let result = loop {
 // first number in Fibonacci sequence over 10:
 assert_eq!(result, 13);
 ```
+
+# Links
+
+The best Rust publications curated
+
+https://github.com/brson/rust-anthology/blob/master/master-list.md
