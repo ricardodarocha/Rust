@@ -78,7 +78,64 @@ pub async fn echo(req_body: String) -> impl Responder {
 Rust supports four loop expressions:
 - A **loop** expression denotes an infinite loop.
 - A **while** expression loops until a predicate is false.
-- A **while** let expression tests a pattern.
+- A **while let** expression tests a pattern.
 - A **for** expression extracts values from an iterator, looping until the iterator is empty.
 All four types of loop support break expressions, continue expressions, and labels. Only loop supports evaluation to non-trivial values.
 
+### Loop
+``` Rust
+loop { println!("I live."); }
+```
+
+### while
+``` Rust
+let mut i = 0;
+
+while i < 10 {
+    println!("hello");
+    i = i + 1;
+}
+```
+
+### while let
+``` Rust
+let mut x = vec![1, 2, 3];
+
+while let Some(y) = x.pop() {
+    println!("y = {}", y);
+}
+
+```
+
+Multiple patterns may be specified with the | operator. This has the same semantics as with | in match expressions:
+
+``` Rust
+let mut vals = vec![2, 3, 1, 2, 2];
+while let Some(v @ 1) | Some(v @ 2) = vals.pop() {
+    // Prints 2, 2, then 1
+    println!("{}", v);
+}
+```
+
+### For
+A for expression is a syntactic construct for looping over elements provided by an implementation of std::iter::IntoIterator. If the iterator yields a value, that value is matched against the irrefutable pattern, the body of the loop is executed, and then control returns to the head of the for loop. If the iterator is empty, the for expression completes.
+
+An example of a for loop over the contents of an array:
+
+``` Rust
+let v = &["apples", "cake", "coffee"];
+
+for text in v {
+    println!("I like {}.", text);
+}
+```
+
+An example of a for loop over a series of integers:
+
+``` Rust
+let mut sum = 0;
+for n in 1..11 {
+    sum += n;
+}
+assert_eq!(sum, 55);
+```
