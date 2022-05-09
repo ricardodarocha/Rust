@@ -139,3 +139,35 @@ for n in 1..11 {
 }
 assert_eq!(sum, 55);
 ```
+
+## Looping break
+``` Rust
+let mut i = 0;
+
+while i < 10 {
+
+    if x 5 {
+        break; }
+        
+    i = i + 1;
+    println!("hello{}", I);
+}
+```
+
+When associated with a loop, a break expression may be used **to return a value** from that loop, via one of the forms break EXPR or break 'label EXPR, where EXPR is an expression whose result is returned from the loop. For example:
+
+
+```Rust
+// Fibonacci
+let (mut a, mut b) = (1, 1);
+let result = loop {
+    if b > 10 {
+        break b;
+    }
+    let c = a + b;
+    a = b;
+    b = c;
+};
+// first number in Fibonacci sequence over 10:
+assert_eq!(result, 13);
+```
