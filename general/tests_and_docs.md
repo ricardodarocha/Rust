@@ -11,9 +11,9 @@ lets create an example
 fn rpi {22/7}
 /// Usage 
 /// ```
-///fn circleArea (radius) {
+///fn circleArea (r) {
 ///    
-///    radius * radius * rpi 
+///    r * r * rpi 
 ///}
 /// ```
 ```
