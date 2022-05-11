@@ -3,18 +3,17 @@ code documentaion and code tests
 
 to give your code documentaion superpower just write comments with 3 /// instead of 2 // 
 
-``` Rust
 /// will appear as discussion text at generated documentaion
 
 lets create an example
-
-/// this method provides a very good aproximation of pi using the razor 22/7
-`
+```Rust
 fn rpi {22/7}
+/// this method provides a very good aproximation of pi using the razor 22/7
 /// Usage 
-fn circleArea (radius) {
-    
-    radius * radius * rpi 
-}
-`
+/// ```
+///fn circleArea (radius) {
+///    
+///    radius * radius * rpi 
+///}
+/// ```
 ```
