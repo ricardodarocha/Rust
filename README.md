@@ -101,7 +101,11 @@ fn exit(x: i32) {
 }
 ```
 
-Check [](https://github.com/ricardodarocha/Rust/blob/main/general/errorhandling.md)
+Check [erro handling](https://github.com/ricardodarocha/Rust/blob/main/general/errorhandling.md) studies
+
+## Writing tests and documentations
+
+
 
 # Links
 
