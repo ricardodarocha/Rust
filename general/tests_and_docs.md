@@ -9,7 +9,7 @@ to give your code documentation superpower just write comments with 3 /// instea
 
 lets create an example
 ```Rust
-/// this method provides a very good aproximation of pi using the razor 22/7
+/// this method provides a very good aproximation of pi using the ratio 22/7
 fn rpi {22/7}
 /// # Examples
 /// ```
