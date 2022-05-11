@@ -9,12 +9,12 @@ to give your code documentaion superpower just write comments with 3 /// instead
 lets create an example
 
 /// this method provides a very good aproximation of pi using the razor 22/7
-\```
+`
 fn rpi {22/7}
 /// Usage 
 fn circleArea (radius) {
     
     radius * radius * rpi 
 }
-\```
+`
 ```
