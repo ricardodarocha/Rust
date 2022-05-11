@@ -1,4 +1,4 @@
-in this section I will do an overview of 2 kind of 2 relevant rust code structures
+in this section I will do an overview of 2 kind of relevant rust code structures
 code documentaion and code tests 
 
 to give your code documentaion superpower just write comments with 3 /// instead of 2 // 
