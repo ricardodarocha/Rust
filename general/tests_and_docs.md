@@ -17,7 +17,7 @@ fn rpi {22/7}
 ///}
 /// ```
 ```
-You can also write testable sentence inside those comment strucutures
+You can also write testable sentence inside those comment strucutures  
 Use **cargo rustdoc --test** to try this
 
 ```Rust
