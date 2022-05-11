@@ -13,7 +13,7 @@ fn rpi {22/7}
 /// ```
 ///fn circleArea (r) {
 ///    
-///    r * r * rpi 
+///    r * r * rpi()
 ///}
 /// ```
 ```
