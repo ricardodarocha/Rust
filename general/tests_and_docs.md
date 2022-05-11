@@ -1,7 +1,7 @@
 # In this section
 
 I will do an overview of 2 kind of relevant rust code structures  
-They are code documentation and code tests 
+They are code **documentation** and code **tests**
 
 to give your code documentation superpower just write comments with 3 /// instead of 2 // 
 
