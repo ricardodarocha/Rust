@@ -28,5 +28,7 @@ Use **cargo rustdoc --test** to try this
 /// // If you pass --test to `rustdoc`, it will even test it for you!
 /// let a = circleArea(1);
 /// assert!(a, rpi())
+/// let b = circleArea(5);
+/// assert!(b, 25 * rpi())
 /// ```
 ```
