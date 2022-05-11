@@ -1,5 +1,5 @@
 in this section I will do an overview of 2 kind of relevant rust code structures  
-They are code documentaion and code tests 
+They are code documentation and code tests 
 
 to give your code documentaion superpower just write comments with 3 /// instead of 2 // 
 
