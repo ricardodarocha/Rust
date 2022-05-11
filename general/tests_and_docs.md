@@ -9,11 +9,22 @@ lets create an example
 ```Rust
 /// this method provides a very good aproximation of pi using the razor 22/7
 fn rpi {22/7}
-/// Usage 
+/// # Examples
 /// ```
 ///fn circleArea (r) {
 ///    
 ///    r * r * rpi()
 ///}
+/// ```
+```
+You can also write testable sentence inside those comment strucutures
+Use **cargo rustdoc --test** to try this
+
+```Rust
+/// ```
+/// // You can have rust code between fences inside the comments
+/// // If you pass --test to `rustdoc`, it will even test it for you!
+/// let a = circleArea(1);
+/// assert!(a, rpi())
 /// ```
 ```
