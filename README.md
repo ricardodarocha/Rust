@@ -105,7 +105,7 @@ Check [erro handling](https://github.com/ricardodarocha/Rust/blob/main/general/e
 
 ## Writing tests and documentations
 
-
+See this Topic [here](https://github.com/ricardodarocha/Rust/blob/main/general/tests_and_docs)
 
 # Links
 
