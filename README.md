@@ -4,7 +4,7 @@ A repository to study Rust from scratch
 
 # Intro
 
-Point of view analisys about the language, the benefits and what you can expect about.
+Point of view analisys about the language, the benefits and what you can expect of.
 
 # Hello World
 
@@ -42,7 +42,7 @@ HttpServer::new(|| {
 
 I create endpoints in file routes.rs
 
-se [row to create modules](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
+see [row to create modules](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
 
 # Log
 
@@ -78,3 +78,41 @@ pub async fn echo(req_body: String) -> impl Responder {
 }
 ```
 
+## Loop expressions
+
+```Rust
+for x in 1..11{ // 11 is not inclusive
+      if x%2==0 {println!("{x} is even")}
+      if x==5 {
+         continue;
+      println("{x}")
+      
+      if x==5 {
+         break x //If is a function, returns x
+         }
+      }
+```
+
+Loops in details [](https://github.com/ricardodarocha/Rust/blob/main/general/loopExpressions)
+
+## Error Handling
+
+```Rust
+fn exit(x: i32) {
+    if x == 0 {
+        panic!("we got a 0");
+    }
+    println!("things are fine")
+}
+```
+
+Check [erro handling](https://github.com/ricardodarocha/Rust/blob/main/general/errorhandling.md) studies
+
+## Writing tests and documentations
+
+See this Topic [here](https://github.com/ricardodarocha/Rust/blob/main/general/tests_and_docs)
+
+# Links
+
+**github notebook**(Best Rust curated)[https://github.com/brson/rust-anthology/blob/master/master-list.md]
+**Video** (Error Handling)[https://www.youtube.com/watch?v=mhw-x5Q_-z0&t=195s]
