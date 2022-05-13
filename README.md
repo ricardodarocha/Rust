@@ -44,6 +44,11 @@ I create endpoints in file routes.rs
 
 se [row to create modules](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
 
+# Log
+
+In this example I explore the funcionalities of crate LOG, and how to show into console the status of server.
+It's a continuation of example 3_api
+
 ---
 
 # Sumary by Subject

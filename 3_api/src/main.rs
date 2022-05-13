@@ -1,3 +1,5 @@
+//Run > cargo run 8085
+
 use actix_web::{web, App, HttpServer};
 use std::env;
 mod routes;
@@ -14,6 +16,8 @@ async fn main() -> std::io::Result<()> {
             8000
         },
     };
+
+    println!("Running on port ... http://localhost:{port}");
     
     HttpServer::new(|| {
         App::new()
