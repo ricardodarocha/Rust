@@ -112,6 +112,39 @@ Check [erro handling](https://github.com/ricardodarocha/Rust/blob/main/general/e
 
 See this Topic [here](https://github.com/ricardodarocha/Rust/blob/main/general/tests_and_docs)
 
+## env
+
+Environments can be controlled using **Argument Parameters** and **Environment Variables**
+
+### Reading Args
+
+```Rust
+/// In this example we intercept first argunt sent by the user when calling the executable
+/// ```shell
+/// cargo run --parameter
+/// ```
+use std::env;
+mod routes;
+
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    let args: Vec<_> = env::args().collect();
+    let port = &args[1];
+```
+
+### Env Variables
+
+```Rust
+/// Now we just read the values stored in .env file
+/// ```ini
+/// user_name=admin
+/// ```
+use dotenv;
+dotenv().expect(".env file not found");
+println!("KEY", env::var("user_name").unwrap());
+env::set_var("password", "unbush84likely8Fdetail42");
+```
+
 # Links
 
 **github notebook**(Best Rust curated)[https://github.com/brson/rust-anthology/blob/master/master-list.md]
