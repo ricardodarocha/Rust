@@ -21,5 +21,7 @@ target/
 4_log/target/
 5_get/target/
 5_get/src/.env
+5_get/src/main.rs
+6_post/src/main.rs
 6_post/target/
 7_env/target/
