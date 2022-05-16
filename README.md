@@ -145,7 +145,19 @@ println!("KEY", env::var("user_name").unwrap());
 env::set_var("password", "unbush84likely8Fdetail42");
 ```
 
+###  TUI
+
+This is how we can create amazing TUI Text User Interfaces with Rust.
+
+[blue TUI](https://lib.rs/crates/cursive)
+[term-table](https://lib.rs/crates/term-table)
+
+A lot of other [TUI libraries](https://lib.rs/command-line-interface)
+
+
 # Links
 
 **github notebook**(Best Rust curated)[https://github.com/brson/rust-anthology/blob/master/master-list.md]
 **Video** (Error Handling)[https://www.youtube.com/watch?v=mhw-x5Q_-z0&t=195s]
+
+https://lib.rs/crates/cursive
