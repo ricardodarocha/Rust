@@ -12,7 +12,8 @@ https://forms.gle/g5Y6V3g5ag75qcPg8
 
 # Prefácio
 
-Se você não tem conhecimento de nenhuma linguagem de programação, é recomendado aprender os fundamentos primeiro.   Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
+Se você não tem conhecimento de nenhuma linguagem de programação, é recomendado aprender os fundamentos primeiro.   
+Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
 **Rust** é uma linguagem excelente, mas por possuir vários recursos avançados, não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
 
 # Intro
