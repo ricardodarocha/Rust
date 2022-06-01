@@ -1,6 +1,7 @@
 # Rust
 
 Um repositório para estudar Rust do começo  
+🚧 **Em construção**  
 
 ---
 
