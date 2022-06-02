@@ -56,25 +56,165 @@ A sequência de estudo que eu tenho aprimorado para você que está começando d
 
 ## Ler um arquivo de configurações .env
 
-É bem provável que algumas configurações você possa controlar pelo próprio cargo.toml que eu expliquei no exemplo hello world, como a versão, o autor e outras informações do binário.
-Outras informações é interessante deixar em um arquivo .env, que você pode ler facilmente com o tutorial a seguir
+É comum controlarmos algumas configurações pelo próprio cargo.toml. Como eu expliquei no exemplo hello world, a versão, o autor e outras informações do binário podem ser declaradas explicitamente no arquivo cargo.toml.
+Mas é interessante deixar outras informações em um arquivo .env, que você pode ler facilmente com o tutorial a seguir
 
 ```Rust
-todo!()
+/// Now we just read the values stored in .env file
+/// ```ini
+/// user_name=admin
+/// ```
+use dotenv;
+dotenv().expect(".env file not found");
+println!("KEY", env::var("user_name").unwrap());
+env::set_var("password", "unbush84likely8Fdetail42");
+```
+
+## Ler os parâmetros da aplicação com args()
+
+Ao executar uma aplicação pela linha de comandos, você pode passar parâmetros para ela
+```Shell
+c:\App> olamundo.exe ricardo
+```
+
+Você pode facilmente acessar estes parâmetros através do comando `args()`
+
+```Rust
+use std::env;
+fn main() {
+let args: Vec<_> = env::args().collect();
+let name = match args.get(1) {
+  Some(value) =>  value,
+  None => "Mundo"
+    };
+println!("Olá {}!", name)
+}
 ```
 
 ## Salvar um arquivo localmente
 
-🚧 Ao interagir com o seu programa o usuário o alimenta com dados. Muitas vezes é conveniente armazenar estes dados para serem recuperados no futuro, mesmo quando o programa é fechado e após abrí-lo novamente, o usuário pode precisar reutilizar estes dados ou compartilhá-los com outros dispositivos por exemplo. Neste exemplo eu mostro como salvar dados localmente ou em rede.
+Ao interagir com o seu programa o usuário o alimenta com dados. Muitas vezes é conveniente armazenar estes dados para serem recuperados no futuro, mesmo quando o programa é fechado e após abrí-lo novamente, o usuário pode precisar reutilizar estes dados ou compartilhá-los com outros dispositivos por exemplo. Neste exemplo eu mostro como salvar dados localmente ou em rede.
+
+Vamos continuar nosso exemplo e prepará-lo para exportar a mensagem em um arquivo
+
+```Rust
+use std::env;
+fn main() {
+let args: Vec<_> = env::args().collect();
+let name = match args.get(1) {
+  Some(value) =>  value,
+  None => "Mundo"
+    };
+/// Parabéns, você aprendeu a formatar strings
+let mensagem = format!("Olá {destinatario}!", destinatario = name)
+
+/// E agora vamos salvar nossa mensagem em um arquivo externo
+    let mut file = File::create("mensagem.txt")?;
+    file.write_all(mensagem)?;
+}
+```
 
 ## Ler arquivos 
 
-🚧 Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
+Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
 
 Há duas formas principais de ler estes arquivos, que eu divido em 
 
   [Ler um arquivo simples]() A maneir mais prática mas nem sempre resolve.  
   [Ler um arquivo grande no formato de stream]() Esta maneira poderoso permite gerenciar o uso de memória e ler arquivos gigantes. 
+  
+Veja este exemplo básico
+
+```Rust
+    let mut file = File::open("mensagem.txt")?;
+    let mut conteudo = String::new();
+    file.read_to_string(&mut conteudo)?;
+    assert_eq!(conteudo, "Hello, world!");
+```
+
+## Refatorando em métodos
+
+Em qualquer linguagem de programação é uma boa prática manter o código limpo, e nunca criar funções muito grandes que tenham várias responsabilidades. Isto pode tornar o código confuso. Por isso nós vamos começar a refatorar o nosso código para quebrá-lo em vários métodos.
+
+```
+use std::env;
+
+fn salvar_no_arquivo(mensagem: String) {
+  let mut file = File::create("mensagem.txt")?;
+  file.write_all(mensagem)?;
+ }
+
+fn main() {
+
+let args: Vec<_> = env::args().collect();
+let name = match args.get(1) {
+  Some(value) =>  value,
+  None => "Mundo"
+    };
+let mensagem = format!("Olá {destinatario}!", destinatario = name)
+
+salvar_no_arquivo(mensagem);
+}
+```
+
+## Utilizando Linguagem Ubíqua
+
+Em primeiro lugar, lendo o código acima, vemos que não é adequado manter blocos de código que estejam em níveis diferentes dentro da hierarquia de procedimentos, isto é, o código precisa fazer sentido como um todo par aquem lê. Por isso vamos encapsular todo o comportamento de setup do programa no método chamado `carregar_parametros`, isto nos permitirá utilizar um padrão de projetos (_design pattern_) muito interessante chamado **Builder**, que utiliza o conceito de _Fluent Api_.
+
+```
+use std::env;
+
+fn pegar_nome_usuario() -> String {
+  let args: Vec<_> = env::args().collect();
+  let name match args.get(1) {
+    Some(value) =>  value,
+    None => "Mundo"
+    };
+   return name;
+}
+
+fn salvar_no_arquivo(mensagem: String) {
+  let mut file = File::create("mensagem.txt")?;
+  file.write_all(mensagem)?;
+ }
+
+fn main() {
+
+let name = pegar_nome_usuario()
+let mensagem = format!("Olá {destinatario}!", destinatario = name)
+
+salvar_no_arquivo(mensagem);
+}
+```
+A linguagem ubíqua é um conceito do DDD que prega ao desenvolvedor utilizar aspectos da língua falada ao escrever seu código, isto é, deve-se utilizar um formato de narrativa que se aproxime da língua dos usuários finais, utilizando inclusive as mesmas palavras que ele utiliza para descrever aquela rotina. Veja que ao utilizar esta técnica o código fica mais fluido, e mais simples de ler, um dos preceitos do código limpo.
+
+## Outras lições da linguagem com este exemplo básico.
+
+Em Rust você não é obrigado a utilizar **return**
+Ao deixar o valor sem ponto e vírgula na última linha de uma função ele será retornando automaticamente
+
+```Rust
+fn pegar_nome_usuario() -> String {
+  let args: Vec<_> = env::args().collect();
+  let name match args.get(1) {
+    Some(value) =>  value,
+    None => "Mundo"
+    };
+   name
+}
+```
+
+Isto dispensa o uso da variável name
+
+```Rust
+fn pegar_nome_usuario() -> String {
+  let args: Vec<_> = env::args().collect();
+  match args.get(1) {
+    Some(value) =>  value,
+    None => "Mundo"
+    }
+}
+```
 
 ## Criar aplicativos de Console ou de Linha de Comando CLI
 
@@ -190,19 +330,6 @@ mod routes;
 async fn main() -> std::io::Result<()> {
     let args: Vec<_> = env::args().collect();
     let port = &args[1];
-```
-
-### Env Variables
-
-```Rust
-/// Now we just read the values stored in .env file
-/// ```ini
-/// user_name=admin
-/// ```
-use dotenv;
-dotenv().expect(".env file not found");
-println!("KEY", env::var("user_name").unwrap());
-env::set_var("password", "unbush84likely8Fdetail42");
 ```
 
 ###  TUI
