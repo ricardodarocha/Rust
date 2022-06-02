@@ -14,13 +14,13 @@ https://forms.gle/g5Y6V3g5ag75qcPg8
 
 Se você não tem conhecimento de qualquer linguagem de programação, é recomendado aprender os fundamentos primeiro.   
 Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
-**Rust** é uma linguagem excelente, mas possui vários recursos avançados,e não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
+**Rust** é uma linguagem excelente, mas possui vários recursos avançados, e não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
 
 # Intro
 
 Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](https://livro.rustbr.org/) , acessando a [Documentação](https://www.rust-lang.org/pt-BR/) ou fazendo cursos pela internet.  
 Para exercitar você precisa configurar um ambiente. 
-[Diversas formas de configurar um ambiente Rust](https://github.com/ricardodarocha/Rust/edit/main/Ambiente.md)
+[Diversas formas de configurar um ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
 
 # Hello World
 
