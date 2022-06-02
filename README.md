@@ -48,7 +48,7 @@ fn main() {
 
 # Aprendendo de A a Z
 
-Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
+🚧 Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
 
 # Continuando o tutorial
 
@@ -65,11 +65,11 @@ todo!()
 
 ## Salvar um arquivo localmente
 
-Ao interagir com o seu programa o usuário o alimenta com dados. Muitas vezes é conveniente armazenar estes dados para serem recuperados no futuro, mesmo quando o programa é fechado e após abrí-lo novamente, o usuário pode precisar reutilizar estes dados ou compartilhá-los com outros dispositivos por exemplo. Neste exemplo eu mostro como salvar dados localmente ou em rede.
+🚧 Ao interagir com o seu programa o usuário o alimenta com dados. Muitas vezes é conveniente armazenar estes dados para serem recuperados no futuro, mesmo quando o programa é fechado e após abrí-lo novamente, o usuário pode precisar reutilizar estes dados ou compartilhá-los com outros dispositivos por exemplo. Neste exemplo eu mostro como salvar dados localmente ou em rede.
 
 ## Ler arquivos 
 
-Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
+🚧 Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
 
 Há duas formas principais de ler estes arquivos, que eu divido em 
 
@@ -78,12 +78,12 @@ Há duas formas principais de ler estes arquivos, que eu divido em
 
 ## Criar aplicativos de Console ou de Linha de Comando CLI
 
-Eu possuo um tutorial mais completo sobre CLI no repo [cli with rust]  
+🚧 Eu possuo um tutorial mais completo sobre CLI no repo [cli with rust]  
 No entanto aqui eu quero dar uma breve introdução:
 
 ## Criando interfaces mais amigáveis e melhores
 
-Se você quer começar logo veja meu tutorial de [Interfaces Amigáveis com Rust]()
+🚧 Se você quer começar logo veja meu tutorial de [Interfaces Amigáveis com Rust]()
 
 Aqui nós experimentamos algums recursos básicos de interface. Mesmo utilizando CLI é possível criar boas interfaces. Em seguida avanço um pouco mais criando interfaces "bonitas" com TUI que são interfaces visuais usando ASCII (exclusivo para terminais e aplicações de linhas de comando).
 
