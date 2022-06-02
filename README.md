@@ -6,19 +6,19 @@ Um repositório para estudar Rust do começo
 ---
 
 Este material começou com meu interesse pessoal em aprender Rust.    
-Aos poucos está se tranformando também num guia para que outras pessoas que tem interesse aprendam Rust.  
-Me ajude a entender o seu perfil e responda a esta pesquisa.  
+Aos poucos, está se tornando um guia para outras pessoas que querem aprender Rust.  
+Se você quer aprender Rust comigo responda à pesquisa e me ajude a entender o seu perfil.  
 https://forms.gle/g5Y6V3g5ag75qcPg8  
 
 # Prefácio
 
-Se você não tem conhecimento de nenhuma linguagem de programação, é recomendado aprender os fundamentos primeiro.   
+Se você não tem conhecimento de qualquer linguagem de programação, é recomendado aprender os fundamentos primeiro.   
 Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
-**Rust** é uma linguagem excelente, mas por possuir vários recursos avançados, não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
+**Rust** é uma linguagem excelente, mas possui vários recursos avançados,e não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
 
 # Intro
 
-Você pode facilmente aprender **Rust** na internet, lendo o Livro de Rust, acessando a Documentação ou fazendo cursos pela internet.  
+Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](https://livro.rustbr.org/) , acessando a [Documentação](https://www.rust-lang.org/pt-BR/) ou fazendo cursos pela internet.  
 Para exercitar você precisa configurar um ambiente. 
 [Diversas formas de configurar um ambiente Rust](https://github.com/ricardodarocha/Rust/edit/main/Ambiente.md)
 
