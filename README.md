@@ -136,7 +136,7 @@ Veja este exemplo básico
 
 Em qualquer linguagem de programação é uma boa prática manter o código limpo, e nunca criar funções muito grandes que tenham várias responsabilidades. Isto pode tornar o código confuso. Por isso nós vamos começar a refatorar o nosso código para quebrá-lo em vários métodos.
 
-```
+```Rust
 use std::env;
 
 fn salvar_no_arquivo(mensagem: String) {
@@ -161,7 +161,7 @@ salvar_no_arquivo(mensagem);
 
 Em primeiro lugar, lendo o código acima, vemos que não é adequado manter blocos de código que estejam em níveis diferentes dentro da hierarquia de procedimentos, isto é, o código precisa fazer sentido como um todo par aquem lê. Isto nos faz um convite relacionado ao idioma, e de agora em diante vamos fazer um esforço para escrever todo o código em português. Por isso vamos encapsular todo o comportamento de setup do programa no método chamado `carregar_parametros`, isto nos permitirá no futuro utilizar um padrão de projetos (_design pattern_) muito interessante chamado **Builder**, que utiliza o conceito de _Fluent Api_. Mas não por enquanto.
 
-```
+```Rust
 use std::env;
 
 fn pegar_nome_usuario() -> String {
@@ -260,11 +260,91 @@ Também estou desenvolvendo este material sobre o Estado da Arte das Interfaces 
 
 Se você tem interesse por games dê uma olhada nestes [Experimentos com Rust - Games]()
 
-## Lendo arquivos CSV com Rust
+# Coletâneas
 
-## Lendo JSON com Rust
+Nesta série de coletâneas eu vou exibir exemplos mais práticos possíveis. Por conta disso, eu vou poupar entrar em detalhes.
+
+## Envir um e-mail 
+
+```Rust
+use lettre::transport::smtp::authentication::Credentials;
+use lettre::{Message, SmtpTransport, Transport};
+
+fn main()
+{
+    let email = Message::builder()
+        .from("sender@...".parse().unwrap())
+        .to("dest@...".parse().unwrap())
+        .subject("Hello From Rust")
+        .body(String::from("This is an automatic e-mail, please ignore!"))
+        .unwrap();
+
+    let creds = Credentials::new(
+        "sender@...".to_string(),
+        "password".to_string()
+    );
+
+    // Open a remote connection to gmail
+    let mailer = SmtpTransport::relay("smtp.gmail.com")
+        .unwrap()
+        .credentials(creds)
+        .build();
+
+    // Send the email
+    match mailer.send(&email) {
+        Ok(_) => println!("Email sent successfully!"),
+        Err(e) => panic!("Could not send email: {:?}", e),
+    }
+}
+```
+
+## Lendo arquivos CSV 
+
+Consulte o tutorial completo da [https://rust-lang-nursery.github.io/rust-cookbook/encoding/csv.html](documentação)
+```Rust
+let mut rdr = csv::ReaderBuilder::new()
+        .has_headers(false)
+        .from_reader(io::stdin());
+    for result in rdr.records() {
+        let record = result?;
+        println!("{:?}", record);
+```
+
+## Lendo JSON 
+
+usando Serde
+```Rust
+fn main() {
+    let the_file = r#"{
+        "FirstName": "John",
+        "LastName": "Doe",
+        "Age": 43,
+        "Address": {
+            "Street": "Downing Street 10",
+            "City": "London",
+            "Country": "Great Britain"
+        },
+        "PhoneNumbers": [
+            "+44 1234567",
+            "+44 2345678"
+        ]
+    }"#;
+
+    let json: serde_json::Value =
+        serde_json::from_str(the_file).expect("JSON was not well-formatted");
+}
+```
+Cargo.toml:
+```
+[dependencies]
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.48"
+```
 
 ## Trabalhando com Bancos de dados
+
+```Rust
+```
 
 Nesta seção eu dedico uma parte especial ao SQLite.
 Em seguida eu recomendo você experimentar um banco de dados Profissional que suporta grande volume de dados como Postgresql
