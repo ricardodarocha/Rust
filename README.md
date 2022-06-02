@@ -159,18 +159,22 @@ salvar_no_arquivo(mensagem);
 
 ## Utilizando Linguagem Ubíqua
 
-Em primeiro lugar, lendo o código acima, vemos que não é adequado manter blocos de código que estejam em níveis diferentes dentro da hierarquia de procedimentos, isto é, o código precisa fazer sentido como um todo par aquem lê. Por isso vamos encapsular todo o comportamento de setup do programa no método chamado `carregar_parametros`, isto nos permitirá utilizar um padrão de projetos (_design pattern_) muito interessante chamado **Builder**, que utiliza o conceito de _Fluent Api_.
+Em primeiro lugar, lendo o código acima, vemos que não é adequado manter blocos de código que estejam em níveis diferentes dentro da hierarquia de procedimentos, isto é, o código precisa fazer sentido como um todo par aquem lê. Isto nos faz um convite relacionado ao idioma, e de agora em diante vamos fazer um esforço para escrever todo o código em português. Por isso vamos encapsular todo o comportamento de setup do programa no método chamado `carregar_parametros`, isto nos permitirá no futuro utilizar um padrão de projetos (_design pattern_) muito interessante chamado **Builder**, que utiliza o conceito de _Fluent Api_. Mas não por enquanto.
 
 ```
 use std::env;
 
 fn pegar_nome_usuario() -> String {
-  let args: Vec<_> = env::args().collect();
-  let name match args.get(1) {
-    Some(value) =>  value,
+  let argumentos: Vec<_> = env::args().collect();
+  let usuario match argumentos.get(1) {
+    Some(valor) =>  valor,
     None => "Mundo"
     };
-   return name;
+   return usuario;
+}
+
+fn formatar_mensagem(usuario) -> String {
+  format!("Olá {destinatario}!", destinatario = usuario)
 }
 
 fn salvar_no_arquivo(mensagem: String) {
@@ -179,10 +183,8 @@ fn salvar_no_arquivo(mensagem: String) {
  }
 
 fn main() {
-
-let name = pegar_nome_usuario()
-let mensagem = format!("Olá {destinatario}!", destinatario = name)
-
+let usuario = pegar_nome_usuario();
+let mensagem = formatar_mensagem(usuario);
 salvar_no_arquivo(mensagem);
 }
 ```
@@ -218,8 +220,33 @@ fn pegar_nome_usuario() -> String {
 
 ## Criar aplicativos de Console ou de Linha de Comando CLI
 
-🚧 Eu possuo um tutorial mais completo sobre CLI no repo [cli with rust]  
-No entanto aqui eu quero dar uma breve introdução:
+Eu estou desenvolvendo um tutorial mais completo sobre CLI no repo [cli with rust](?)🚧   
+No entanto aqui eu vou dar uma breve introdução:
+
+## Criando uma aplicação simples de linha de comando (CLI) 
+
+Um aplicativo binário compilado pelo Rust pode ser facilmente integrado à Interface de Linha de comando de qualquer terminal, seja Linux, Windows ou Plataformas Embarcadas. Você pode chamar `curl aplicativo.exe` e ele será executado. Mas vamos ver o que podemos fazer para torná-lo mais interativo.
+
+A primeira coisa é trabalhar com argumentos, ou parâmetros, como vimos no tutorial anterior.
+Outra forma é coletar inputs do usuário, enquanto o programa está em execução.
+
+```
+fn pegar_nome_usuario() -> String {
+  let args: Vec<_> = env::args().collect();
+  match args.get(1) {
+    Some(value) =>  value,
+    None => {
+      use std::io::{stdin};
+      let mut usuario=String::new();
+      print!("Digite seu nome: ");
+      let _=stdout().flush();
+      stdin().read_line(&mut usuario).wnrap_or("Mundo");
+      usuario
+      }
+    }
+}
+```
+Aprenda o estado da arte com [CLAP](https://docs.rs/clap/2.33.0/clap/)
 
 ## Criando interfaces mais amigáveis e melhores
 
