@@ -343,6 +343,9 @@ serde_json = "1.0.48"
 
 ## Trabalhando com Bancos de dados
 
+É recomendado utilizar a biblioteca [Diesel](https://diesel.rs/guides/getting-started)
+Consulte também [Postgresl](https://docs.rs/postgres/0.15.2/postgres/)
+Consulte também [SQLite](https://docs.rs/sqlite/latest/sqlite/)
 ```Rust
 ```
 
