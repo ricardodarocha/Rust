@@ -359,6 +359,9 @@ Neste diretório eu reúno um estudo completo de SQL com Rust, incluindo discuti
 In this example I explore the funcionalities of crate LOG, and how to show into console the status of server.
 It's a continuation of example 3_api
 
+## Criando Um Chat
+[Acesse o Link](https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html)
+
 ---
 
 # Sumary by Subject
