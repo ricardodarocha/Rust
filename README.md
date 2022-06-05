@@ -110,7 +110,7 @@ let mensagem = format!("Olá {destinatario}!", destinatario = name)
 
 /// E agora vamos salvar nossa mensagem em um arquivo externo
     let mut file = File::create("mensagem.txt")?;
-    file.write_all(mensagem)?;
+    file.write_all(men sagem)?;
 }
 ```
 
@@ -360,7 +360,8 @@ In this example I explore the funcionalities of crate LOG, and how to show into 
 It's a continuation of example 3_api
 
 ## Criando Um Chat
-[Acesse o Link](https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html)
+
+[Acesse o Link](https://github.com/ricardodarocha/rust-chat-old)
 
 ---
 
