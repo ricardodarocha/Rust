@@ -457,13 +457,11 @@ A lot of other [TUI libraries](https://lib.rs/command-line-interface)
 
 # Api 
 
-This is a setup to create API
+Este é um guia para criar APIS com Rust
 
-This amazing example shows how easy is to create an Api from scratch.
+Neste exemplo eu mostro como criar uma API do zero.
 
-Have a tasting of how the api works
-
-This is `main.rs`
+Comece com o arquivo `main.rs`
 
 ```Rust
 HttpServer::new(|| {
@@ -477,9 +475,12 @@ HttpServer::new(|| {
     .await
 ```
 
-I create endpoints in file routes.rs
+Neste exemplo eu recomendo você começar com dois arquivos, ou seja
+a regra de negócios principal fica no main.rs, onde você expõe o servidor e suas configurações básicas, como a porta.
+As rotas você deve deixar no arquivo routes.rs.
+Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode se tornar grande com o tempo, e mesmo para projetos pequenos, você criar uma melhora separação das responsabilidades.
 
-see [row to create modules](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
+Veja [como criar módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
 
 # Arquiteturas com RUST
 
