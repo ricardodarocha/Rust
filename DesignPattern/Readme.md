@@ -1,6 +1,6 @@
 # Um guia de Design Patterns com Rust
 
-Neste repositório eu explico e mostro exemplos de design patter com RUST
+Neste repositório eu explico e mostro exemplos de design pattern com RUST
 
 ## O Padrão Builder e o Dialeto Fluent
 
