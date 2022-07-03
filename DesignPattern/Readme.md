@@ -18,13 +18,13 @@ fn main() {
 }
 ```
 
-Este formato é possível na linguagem funcional se você escrever implementações como funções que retornam a se mesmo (Self)
+Este formato é possível na linguagem funcional se você escrever implementações como funções que retornam a si mesmo (Self)
 
 ```Rust
-impl App() --> Self {
-  //Your code;
-  
-  return Self
+impl App{
+  fn atribuir(&mut self, valor: any) --> &mut Self {
+  self.any = any;  
+  return self
 }
 ```
 https://www.youtube.com/watch?v=5DWU-56mjmg&t=419s _em inglês_
