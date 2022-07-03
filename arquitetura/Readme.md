@@ -1,5 +1,7 @@
 # Introdução à Arquiteutra de Projetos com Rust
 
+![](Amazon.PNG)
+
 Neste repositório eu demonstro como planejar a sua aplicação em diretórios, baseado na funcionalidade e na modularização
 
 Alguns princípios que você deve estar atento ao elaborar uma Arquitetura de Projeto
@@ -16,6 +18,8 @@ Se você organizar bem o seu código, você terá menos trabalho para encontrar 
 - [x] Alta produtividade
 
 ## Criando uma estrutura de Projetos
+
+![](arquitetura.png)
 
 Embora não se possa dizer que esta estrutura de pastas seja realmente eficiente em 100% dos casos, eu acho que é um excelente ponto de partida para você começar a estudar Rust e organizar sua aplicação em módulos
 Se deseja um estudo mais profundo de como organizar sua própria estrutura, consulte o tópico Analisando minha estrutura de projetos
@@ -85,6 +89,7 @@ Os models também podem ser compartilhados com várias aplicações, (pasta shar
 Embora em alguns casos seja recomendado escrever models específicos para cada aplicação (pastas específicas de cada aplicação)
 
 
+![](Diretorios.png)
 
 ## Outras pastas
 
@@ -102,7 +107,14 @@ Você pode criar testes no próprio código fonte, no entanto um diretório de t
 A camada de testes irá ajudar que a camada de infra sofra alterações de manutenção por exemplo, sem quebrar o comportamento padrão esperado.
 Também irá garantir que determinadas atualizações das libs não afetem a aplicação, e quando for o caso poderão rapidamente ser detectadas e revertidas para a versão estável.
 
+# Arquiteturas complexas
 
+Com o tempo você irá compreender melhor a estrutura dos projetos e escolher a arquitetura mais adequada. Muitas vezes você irá ver a própria arquitetura se modificar, até atingir elementos bem avançados que melhor irão atender as suas expectativas e às necessidades da sua aplicação
+
+Exemplo de uma arquitetura distribuída na nuvem
+Cada lambda poderá ser escrito como um microsserviço, em linguagems diferentes, hospedados em serviços diferentes na nuvem
+
+![](distribuida.png)
 
 ##  Analisando minha estrutura de projetos
 
