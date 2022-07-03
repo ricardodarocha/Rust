@@ -1,4 +1,4 @@
-# Introdução à Arquiteutra de Projetos com Rust
+# Introdução à Arquitetura de Projetos com Rust
 
 ![](Amazon.PNG)
 
