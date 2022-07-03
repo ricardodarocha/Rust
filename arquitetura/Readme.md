@@ -94,13 +94,14 @@ Embora em alguns casos seja recomendado escrever models específicos para cada a
 
 Observe o conteúdo da pasta **src** abaixo
 
-``` src
-│   ├── api
-│   │   ├── 
-│   │── app
-│   │   ├── 
-│   └── shared
-│       ├── 
+```shell
+└── src
+    ├── api
+    │   ├── 
+    │── app
+    │   ├── 
+    └── shared
+        ├── 
 ```
 
 ![](Diretorios.png)
