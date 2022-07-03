@@ -27,7 +27,7 @@ Este formato é possível na linguagem funcional se você escrever implementaç�
 #[macro_use]
 extern crate derive_builder;
 
-#[derive(Builder)]
+#[derive(Default, Builder)]
 #[builder(setter(build))]
 struct pub struct Server {
   host: String,
@@ -39,7 +39,7 @@ struct pub struct Server {
 ✨ Esta simples expansão irá permitir construir uma nova instância de Server assim
 
 ```Rust
-let serv = ServerBuilder
+let serv = ServerBuilder::default()
 .host("localhost".to_owned),
 .port(9090),
 .timeout(3000):
