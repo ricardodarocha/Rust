@@ -64,3 +64,56 @@ trait Iterator<T> {
 ```
 
 Saiba mais em https://github.com/lpxxn/rust-design-pattern/blob/master/behavioral/iterator.rs
+
+## Observer
+
+Observer utiliza uma estrutura de Notificadores e Assinantes  
+Um Notificador é um detentor de uma informação ou um Agente capaz de informar um ou mais assinante quando houver uma novidade, ou após a modificação do estado de uma aplicação.
+
+Podemos exemplificar o Observer como um banco de dados REDIS que irá disparar uma notificação para as aplicações CLIENT quando for inserido um novo item no banco de dados, por exemplo. No entanto este design pattern será implementado inteiramente numa mesma camada da aplicação.
+
+### Caso prático
+
+Imagine que uma aplicação que monitore o preço das ações na Bolsa de Valores  
+Sempre que uma ação da Bolsa de valores cair ou subir, irá notificar os clientes que possuem aquela ação na sua carteira.  
+No entanto para não ter problemas de tráfego, a aplicação irá notificar apenas as 100 ações com alterações mais relevantes
+
+A representação deste aplicativo ficaria assim
+
+```Rust
+impl Notificador {
+
+fn Notificar(assinantes Vec<Assinante>) {
+for acao in acoes
+  assinantes(acao).notify(acao)
+  }
+
+fn Assinar(assinante, acao) {
+  Self.assinantes(acao).push(assinante)
+  }
+}
+```
+
+```Rust
+impl Assinante {
+
+fn Assinar(notificador: Notificador; acoes: Acao)
+for acao in acoes
+  notificador.assinar(Self, acao)
+  }
+```
+
+
+```Rust
+use std::rc::Weak;
+
+struct Event;
+
+trait Observable {
+    fn register(&mut self, observer: Weak<dyn Observer>);
+}
+
+trait Observer {
+    fn notify(&self, event: &Event);
+}
+```
