@@ -86,5 +86,5 @@ o parâmetro `> diagrama.svg` exporta o resultado para um arquivo .svg, que voce
 
 Dica instale a extensão [**svg Viewer**](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer) para visualizar o grafo no VSCode.
 
-
+![Diagrama](diagrama.svg)
 
