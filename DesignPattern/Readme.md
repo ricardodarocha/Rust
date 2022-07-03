@@ -191,3 +191,56 @@ trait Observer {
     fn notify(&self, event: &Event);
 }
 ```
+---
+## State
+
+State é um design pattern que admite que um determinado objeto possua uma variável de estado que representa diferentes estados em que o objeto se encontra.
+Também admite que há um fluxo predefinido onde um objeto que está em um determinado estado irá percorrer uma sequência lógica, e que esta sequência contém algumas regras específicos sobre quais estados são permitidos no próximo estágio, e quais não.
+
+Por exemplo, uma invoice pode representar o estado padrão de uma operação de compra de uma mercadoria. Podemos ilustrar o fluxo assim
+
+```Mermaid
+flowchart TD
+request-->order
+order-->complete
+```
+
+Note que não é possível uma **request** passar diretamente para o estado de **complete**
+primeiro é necessário receber aprovação, que é representado pelo estado **order**
+
+A implementação fica assim
+
+```Rust
+
+pub struct Invoice {
+  state: Option<Box<dyn State>>,
+  product_id: String,
+  quant: u16,
+  price: f16,
+  tax: f16,
+}
+
+impl Invoice {
+  pub fn new(id: String, quant: u16) -> Invoice {
+    Invoice {
+      state: Some(Box::new(request {} )),
+      product_id: id,
+      quant: quant
+    }
+  }
+  pub fn approve(&mut self, quant: u16) -> Invoice {
+      self.state: Some(Box::new(order {} )),
+      self.quant: quant
+    self
+  }
+  pub fn complete(&mut self, price: f16, tax: f16) -> Invoice {
+      self.state: Some(Box::new(complete {} )),
+      self.price: price,
+      self.tax: tax  
+    self
+  }
+}
+
+trait invoice_request {}
+trait invoice_order {}
+trait invoice_complete {}
