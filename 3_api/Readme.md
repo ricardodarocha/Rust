@@ -4,7 +4,7 @@
 
 Este é um guia para criação de APIS com RUST
 
-Acesse o guia mais recente para criar [**APIS com RUST + Posgres**](https://github.com/ricardodarocha/sqlxpg)
+Acesse o guia mais recente para criar [**APIS com RUST + Postgres**](https://github.com/ricardodarocha/sqlxpg)
 
 Neste exemplo eu mostro como criar uma API do zero.
 
