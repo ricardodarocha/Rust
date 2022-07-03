@@ -27,6 +27,7 @@ impl App() --> Self {
   return Self
 }
 ```
+https://www.youtube.com/watch?v=5DWU-56mjmg&t=419s _em inglês_
 
 ## Iterator
 
