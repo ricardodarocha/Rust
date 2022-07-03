@@ -92,6 +92,7 @@ pub struct User {
 Os models também podem ser compartilhados com várias aplicações, (pasta shared)  
 Embora em alguns casos seja recomendado escrever models específicos para cada aplicação (pastas específicas de cada aplicação)
 
+Observe o conteúdo da pasta **src** abaixo
 
 ![](Diretorios.png)
 
