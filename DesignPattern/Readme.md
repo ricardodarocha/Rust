@@ -27,6 +27,48 @@ impl App{
   return self
 }
 ```
+
+Idiomaticamente é recomendável escrever estruturas com responsabilidades específicas, criando um struct específico para construir (Builder) uma estrutura Comportamental (Business)
+
+```Rust
+pub struct Server {
+  host: String,
+  port: u16,
+  timeout: Option<ms>,
+  }
+  
+  impl Server {
+    fn index() -> HttpResponse {
+    return Ok('<div> Olá Mundo </div>'.to_owned())
+    }
+    
+ -------------
+ 
+pub struct ServerBuilder {
+  host: String,
+  port: u16,
+  timeout: Option<ms>,
+  }
+ 
+
+  impl ServerBuilder {
+    fn host(&mut self, host: String) -> &mut Self {
+      self.host = host;
+      return self
+    }
+    fn port(&mut self, port: u16) -> &mut Self {
+      self.port = port;
+      return self
+    }
+    fn timeout(&mut self, value: i32) -> &mut Self {
+      self.timeout = ms(value);
+      return self
+    }
+    fn build(&mut self2) -> Server {
+      return Server {self.host, self.port, self.timeout}
+    }
+}
+
 https://www.youtube.com/watch?v=5DWU-56mjmg&t=419s _em inglês_
 
 ## Iterator
