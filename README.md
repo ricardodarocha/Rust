@@ -60,7 +60,8 @@ match x {
   - => println!("outro qualquer"),
 }
 ```
-https://www.youtube.com/watch?v=8_HPKGZGM5I _em inglês_
+
+https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs
 
 # Aprendendo de A a Z
 
