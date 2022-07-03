@@ -223,24 +223,27 @@ pub struct Invoice {
 impl Invoice {
   pub fn new(id: String, quant: u16) -> Invoice {
     Invoice {
-      state: Some(Box::new(request {} )),
+      state: Some(Box::new(invoice_request {} )),
       product_id: id,
       quant: quant
     }
   }
   pub fn approve(&mut self, quant: u16) -> Invoice {
-      self.state: Some(Box::new(order {} )),
+      self.state: Some(Box::new(invoice_order {} )),
       self.quant: quant
     self
   }
   pub fn complete(&mut self, price: f16, tax: f16) -> Invoice {
-      self.state: Some(Box::new(complete {} )),
+      self.state: Some(Box::new(invoice_complete {} )),
       self.price: price,
       self.tax: tax  
     self
   }
 }
-
+```
+_em manutenção_
+```Rust
 trait invoice_request {}
 trait invoice_order {}
 trait invoice_complete {}
+```
