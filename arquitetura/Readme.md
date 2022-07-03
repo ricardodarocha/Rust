@@ -74,7 +74,7 @@ crate sqlxpg
 
 Esta funcionalidade vai revolucionar a sua visão de arquitetura de projetos com Rust (E também com outras linguagens)  
 Instale a aplicação para visualizar grafos [**Graphviz**](https://graphviz.org/download/) (Open Source, Free to download)  
-![Grapho](grapho.png)
+![Grapho](Grapho.PNG)
 
 Após instalar você poderá executar o verificador utilizando o parametro
 
