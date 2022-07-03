@@ -20,7 +20,89 @@ Se você organizar bem o seu código, você terá menos trabalho para encontrar 
 Embora não se possa dizer que esta estrutura de pastas seja realmente eficiente em 100% dos casos, eu acho que é um excelente ponto de partida para você começar a estudar Rust e organizar sua aplicação em módulos
 Se deseja um estudo mais profundo de como organizar sua própria estrutura, consulte o tópico Analisando minha estrutura de projetos
 
+```
+projeto
+├── doc
+│   ├── swagger
+│   ├── mkdocs-material
+│   └── docs # Rust Generated Docs
+├── examples
+├── src
+│   ├── bin.rs
+│   ├── main.rs
+│   └── api
+│       ├── 
+│   └── app
+│       ├── 
+│   └── shared
+│       ├── 
+├── target
+└── tests
+```
+
+## Aplicação em camadas
+
+Uma aplicação em camadas é a maneira mais simples de compartilhar código
+Imagine que você queira formar uma startup possuindo uma aplicação MVP (Miminum Value Product) que é o menor modelo de negócios que você possa criar para atender a um problema específico.
+É bem comum que você possua uma divisão em camadas, com uma aplicação na nuvem (api) e outras aplicações (aplicativos, apps) que vão rodar no computador dos clientes, no browser ou no celular.
+
+Um ponto importante é que muito provavelmente **há aspcetos compartilhados** tanto da regra de negócios como dos models.
+Vamos esclarecer estes termos
+
+### Regra de Negócios / Core
+
+Muitas vezes chamado **Core** da aplicação, a regra de negócios utiliza a **linguagem ubíqua** para representar o problema no mundo real.
+
+```
+with user do
+  select * from users as user where username = ?username
+then
+   if user.contais > 1 then error('Vários usuáros com o mesmo login')
+   else if user.contais = 0 then error('Usuário não encontrado')
+   else if user.password = ?password then
+      return logged
+   else 
+      return 'invalid password'
+```
+Esta lógica pode ser encapsulada em várias classes (POO) ou Structs e Functions, vai depender do paradigma de programação que você está usando.
+O Ponto importante é que muitas vezes uma regra de negócios poderá ser compartilhada entre vários aplicativos, neste caso é recomendável colocar estas regras de negócio em um módulo compartilhado (pasta shared)
+
+### Models
+
+Quando temos dados armazenados em arquivos ou no banco de dados, ou quando criamos entidades para representar os dados da aplicação, podemos criar structs que ficam em um módulo especial chamado Models
+
+Models representa as entidades e os atributos destas entidades.
+
+```Rust
+pub struct User {
+    pub id: i32,
+    pub nome: String,
+    pub email: String,
+    pub senha: String
+}
+```
+Os models também podem ser compartilhados com várias aplicações, (pasta shared)  
+Embora em alguns casos seja recomendado escrever models específicos para cada aplicação (pastas específicas de cada aplicação)
+
 ###  Analisando minha estrutura de projetos
+
+## Outras pastas
+
+### Infra
+
+Infra normalmente é uma pasta onde implementamos algums recursos concretos da aplicação  
+Imagina que nossa aplicação possua um serviço de autenticação, mas com o passar do tempo podemos mudar de ideia e encontrar uma lib de autenticação mais eficinte, mais rápida ou menos vulnerável a falhas de segurança.
+Neste caso podemos subsituir este componente sem reescrever toda a aplicação, apenas a parte de importar o componente e escrever um adaptador específico será repada, o core da aplicação continuará funcionando com o mesmo comportamento (regra de negócios)
+
+### Testes
+
+Uma maneira de garantir que aplicação irá continuar funcionando adequadamente é escrevendo testes. Uma programação orientada a testes **tdd** é cada vez mais empregada e os testes podem ser facilmente escritos em rust.
+
+Você pode criar testes no próprio código fonte, no entanto um diretório de testes centralizados é altamente recomendável.
+A camada de testes irá ajudar que a camada de infra sofra alterações de manutenção por exemplo, sem quebrar o comportamento padrão esperado.
+Também irá garantir que determinadas atualizações das libs não afetem a aplicação, e quando for o caso poderão rapidamente ser detectadas e revertidas para a versão estável.
+
+
 
  O primeiro passo para analisar a sua estrutura de projetos atual é instalando o pacote de análise cargo-modules
  
