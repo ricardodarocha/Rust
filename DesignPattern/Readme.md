@@ -197,13 +197,58 @@ trait Observer {
 State é um design pattern que admite que um determinado objeto possua uma variável de estado que representa diferentes estados em que o objeto se encontra.
 Também admite que há um fluxo predefinido onde um objeto que está em um determinado estado irá percorrer uma sequência lógica, e que esta sequência contém algumas regras específicos sobre quais estados são permitidos no próximo estágio, e quais não.
 
-Por exemplo, uma invoice pode representar o estado padrão de uma operação de compra de uma mercadoria. Podemos ilustrar o fluxo assim
+🚩 Por exemplo, uma invoice pode representar o estado padrão de uma operação de compra de uma mercadoria. Podemos ilustrar o fluxo assim
 
 ```Mermaid
 flowchart TD
 request-->order
 order-->complete
 ```
+
+💣 Implementar o design pattern State em Rust exatamente como é recomendado para Programação Orientada a Objetos (POO) não irá tirar proveito dos recursos Rust, em vez disso é recomendada uma abordagem mais rustácea:
+
+```Rust
+pub struct Request {
+  product_id: String,
+  quant: u16 }
+  
+pub struct Order {
+  product_id: String,
+  quant: u16 }
+  
+pub struct Invoice {
+  product_id: String,
+  quant: u16 }
+  price: f16,
+  tax: f16}
+  
+impl Request {
+  fn new(id: String, quant: u16) -> Request {
+  product_id: id,
+  quant: quant,
+    }
+  fn approve(self, quant: u16) -> Order {
+  Order{
+  product_id: self.id,
+  quant: quant,
+  }
+}
+
+impl Order {
+  fn complete(&mut ord: Order, price: f16, tax: f16) -> Invoice {
+  Invoice{
+  product_id: ord.id,
+  quant: ord.quant,
+  price: price,
+  tax: tax
+  }
+}
+}
+```
+
+🧐 No entanto o exemplo a seguir pode ser usado para estudo e quem esta abordagem pode ser aprimorada
+
+**Este exemplo utiliza uma abordagem não recomendada**
 
 Note que não é possível uma **request** passar diretamente para o estado de **complete**
 primeiro é necessário receber aprovação, que é representado pelo estado **order**
