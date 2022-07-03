@@ -204,8 +204,9 @@ flowchart TD
 request-->order
 order-->complete
 ```
+Note que não é possível uma **request** passar diretamente para o estado de **complete**
 
-💣 Implementar o design pattern State em Rust exatamente como é recomendado para Programação Orientada a Objetos (POO) não irá tirar proveito dos recursos Rust, em vez disso é recomendada uma abordagem mais rustácea:
+🦀 Implementar o design pattern State em Rust exatamente como é recomendado para Programação Orientada a Objetos (POO) não irá tirar proveito dos recursos Rust, em vez disso é recomendada uma abordagem mais rustácea:
 
 ```Rust
 pub struct Request {
@@ -248,11 +249,9 @@ impl Order {
 
 🧐 No entanto o exemplo a seguir pode ser usado para estudo e quem esta abordagem pode ser aprimorada
 
-**Este exemplo utiliza uma abordagem não recomendada**
+💣 **Este exemplo utiliza uma abordagem não recomendada**
 
-Note que não é possível uma **request** passar diretamente para o estado de **complete**
 primeiro é necessário receber aprovação, que é representado pelo estado **order**
-
 A implementação fica assim
 
 ```Rust
