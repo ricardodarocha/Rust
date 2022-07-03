@@ -17,6 +17,10 @@ Se você organizar bem o seu código, você terá menos trabalho para encontrar 
 - [x] Facilidade para encontrar o que deseja
 - [x] Alta produtividade
 
+acesse a minha curadoria de projetos Rust com base na arquitetura
+[Projetos Rust]()
+[Design patterns em Rust]()
+
 ## Criando uma estrutura de Projetos
 
 ![](arquitetura.png)
