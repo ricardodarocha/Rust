@@ -60,6 +60,7 @@ match x {
   - => println!("outro qualquer"),
 }
 ```
+https://www.youtube.com/watch?v=8_HPKGZGM5I _em inglês_
 
 # Aprendendo de A a Z
 
