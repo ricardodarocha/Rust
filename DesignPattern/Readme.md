@@ -225,9 +225,11 @@ pub struct Invoice {
   
 impl Request {
   fn new(id: String, quant: u16) -> Request {
+  Request{
   product_id: id,
   quant: quant,
     }
+  }
   fn approve(self, quant: u16) -> Order {
   Order{
   product_id: self.id,
@@ -273,16 +275,20 @@ impl Invoice {
     }
   }
   pub fn approve(&mut self, quant: u16) -> Invoice {
+  Invoice{
       self.state: Some(Box::new(invoice_order {} )),
       self.quant: quant
     self
+    }
   }
   pub fn complete(&mut self, price: f16, tax: f16) -> Invoice {
+  Invoice {
       self.state: Some(Box::new(invoice_complete {} )),
       self.price: price,
       self.tax: tax  
     self
   }
+}
 }
 ```
 _em manutenção_
