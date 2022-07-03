@@ -204,7 +204,8 @@ flowchart TD
 request-->order
 order-->complete
 ```
-Note que não é possível uma **request** passar diretamente para o estado de **complete**
+Note que não é possível uma **request** passar diretamente para o estado de **complete**  
+Primeiro é necessário receber aprovação, que é representado pelo estado **order**
 
 🦀 Implementar o design pattern State em Rust exatamente como é recomendado para Programação Orientada a Objetos (POO) não irá tirar proveito dos recursos Rust, em vez disso é recomendada uma abordagem mais rustácea:
 
@@ -249,51 +250,38 @@ impl Order {
 }
 ```
 
-🧐 No entanto o exemplo a seguir pode ser usado para estudo e quem esta abordagem pode ser aprimorada
+🧐 
 
-💣 **Este exemplo utiliza uma abordagem não recomendada**
-
-primeiro é necessário receber aprovação, que é representado pelo estado **order**
 A implementação fica assim
 
 ```Rust
-
-pub struct Invoice {
-  state: Option<Box<dyn State>>,
-  product_id: String,
-  quant: u16,
-  price: f16,
-  tax: f16,
+enum Invoice {
+  Request(String, u16, ), 
+  Order(String, u16, ),
+  Invoice(String, u16, f32, f32, ),
 }
 
 impl Invoice {
-  pub fn new(id: String, quant: u16) -> Invoice {
-    Invoice {
-      state: Some(Box::new(invoice_request {} )),
-      product_id: id,
-      quant: quant
+
+    fn approve(self, quant: u16,) -> Invoice {
+        match self {
+            Invoice::Request(product_id, _) => return Invoice::Order(product_id.to_string(), quant),
+            _ => return self
+        }
     }
-  }
-  pub fn approve(&mut self, quant: u16) -> Invoice {
-  Invoice{
-      self.state: Some(Box::new(invoice_order {} )),
-      self.quant: quant
-    self
+    
+    fn complete(self, price: f32, tax: f32) -> Invoice {
+        match self {
+            Invoice::Order(product_id, quant) => return Invoice::Invoice(product_id.to_string(), quant, price, tax),
+            _ => return self
+        }
     }
-  }
-  pub fn complete(&mut self, price: f16, tax: f16) -> Invoice {
-  Invoice {
-      self.state: Some(Box::new(invoice_complete {} )),
-      self.price: price,
-      self.tax: tax  
-    self
-  }
+} 
+
+fn main() {
+    let request = Invoice::Request("031ac51c".to_owned(), 2_000);
+    let order = request.approve(1_500);
+    let _invoice = order.complete(19.90, 127.00);
+    
 }
-}
-```
-_em manutenção_
-```Rust
-trait invoice_request {}
-trait invoice_order {}
-trait invoice_complete {}
 ```
