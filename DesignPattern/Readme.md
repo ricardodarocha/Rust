@@ -20,6 +20,35 @@ fn main() {
 
 Este formato é possível na linguagem funcional se você escrever implementações como funções que retornam a si mesmo (Self)
 
+✨ **Rust possui suporte nativo** ao padrão Builder por meio da macro **derive_builder**
+
+
+```Rust
+#[macro_use]
+extern crate derive_builder;
+
+#[derive(Builder)]
+#[builder(setter(build))]
+struct pub struct Server {
+  host: String,
+  port: u16,
+  timeout: Option<ms>,
+  }
+}
+```
+Esta simples expansão irá permitir construir uma nova instância de Server assim
+
+```Rust
+let serv = ServerBuilder
+.host("localhost".to_owned),
+.port(9090),
+.timeout(3000):
+.build()
+.unwrap();
+```
+
+No entanto se você é iniciante eu recomendo implementar este design patter com as suas próprias mãos:
+
 ```Rust
 impl App{
   fn atribuir(&mut self, valor: any) --> &mut Self {
