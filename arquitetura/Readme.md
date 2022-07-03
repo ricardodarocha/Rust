@@ -106,6 +106,12 @@ Observe o conteúdo da pasta **src** abaixo
 
 ![](Diretorios.png)
 
+## Pastas padrões
+
+**src** é a pasta gerado pelo Rust cargo, onde contém todo o código fonte do seu projeto
+**target** é a pasta padrão onde cargo irá gerar os binários
+
+
 ## Outras pastas
 
 ### Infra
