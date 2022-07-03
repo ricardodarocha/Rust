@@ -4,7 +4,7 @@ Neste repositório eu explico e mostro exemplos de design patter com RUST
 
 ## O Padrão Builder e o Dialeto Fluent
 
-Utilizar a linguagem ubíqua é a forma mais recomendada para você escrever o ponto de entrada para a sua aplicação `main.rs` `lib.rs`
+💬 Utilizar a linguagem ubíqua é a forma mais recomendada para você escrever o ponto de entrada para a sua aplicação `main.rs` `lib.rs`
 
 ```Rust
 fn main() {
@@ -36,7 +36,7 @@ struct pub struct Server {
   }
 }
 ```
-Esta simples expansão irá permitir construir uma nova instância de Server assim
+✨ Esta simples expansão irá permitir construir uma nova instância de Server assim
 
 ```Rust
 let serv = ServerBuilder
@@ -47,7 +47,7 @@ let serv = ServerBuilder
 .unwrap();
 ```
 
-No entanto se você é iniciante eu recomendo implementar este design patter com as suas próprias mãos:
+👶 No entanto se você é iniciante eu recomendo implementar este design patter com as suas próprias mãos:
 
 ```Rust
 impl App{
@@ -57,7 +57,7 @@ impl App{
 }
 ```
 
-Idiomaticamente é recomendável escrever estruturas com responsabilidades específicas, criando um struct específico para construir (Builder) uma estrutura Comportamental (Business)
+🎯 Idiomaticamente é recomendável escrever estruturas com responsabilidades específicas, criando um struct específico para construir (Builder) uma estrutura Comportamental (Business)
 
 ```Rust
 pub struct Server {
