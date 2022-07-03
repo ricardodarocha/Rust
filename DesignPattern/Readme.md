@@ -54,7 +54,7 @@ todos_meses_do_ano.split(',')
  Observe que o método map é chamado para cada elemento do iterador _split_  
 Split é um iterador porque implementa o `trait Iterator` que possui a seguinte estrutura
 
-```
+```Rust
 trait Iterator<T> {
     fn next(&mut self) -> Option<T>;
     fn current(&self) -> Option<T>;
