@@ -250,9 +250,7 @@ impl Order {
 }
 ```
 
-🧐 
-
-A implementação fica assim
+🧐 Eu também preparei esta abordagem utilizando Enum. A implementação fica assim
 
 ```Rust
 enum Invoice {
