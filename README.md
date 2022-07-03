@@ -22,7 +22,7 @@ Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](htt
 Para exercitar você precisa configurar um ambiente. 
 [Diversas formas de configurar um ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
 
-# Hello World
+# Olá Mundo
 
 A forma mais comum de aprender uma linguagem é começar pelo exemplo _Olá mundo_.  
 
@@ -43,6 +43,21 @@ const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 fn main() {
     /// neste exemplo, além de aprender a exibir a versão você também aprendeu como formatar valores na mensagem
     println!("Olá, mundo! \nThis is version {}", VERSION);
+}
+```
+
+# correspondência
+
+o padrão **match** é um dos recursos mais importantes da linguagem Rust
+
+```Rust
+let x: i32 = 1;
+
+match x {
+  1 => println!("um"),
+  2 => println!("dois"),
+  3 => println!("três"),
+  - => println!("outro qualquer"),
 }
 ```
 
