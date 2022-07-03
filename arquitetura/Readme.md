@@ -30,10 +30,10 @@ projeto
 ├── src
 │   ├── bin.rs
 │   ├── main.rs
-│   └── api
-│       ├── 
-│   └── app
-│       ├── 
+│   ├── api
+│   │   ├── 
+│   │── app
+│   │   ├── 
 │   └── shared
 │       ├── 
 ├── target
@@ -84,7 +84,7 @@ pub struct User {
 Os models também podem ser compartilhados com várias aplicações, (pasta shared)  
 Embora em alguns casos seja recomendado escrever models específicos para cada aplicação (pastas específicas de cada aplicação)
 
-###  Analisando minha estrutura de projetos
+
 
 ## Outras pastas
 
@@ -103,6 +103,8 @@ A camada de testes irá ajudar que a camada de infra sofra alterações de manut
 Também irá garantir que determinadas atualizações das libs não afetem a aplicação, e quando for o caso poderão rapidamente ser detectadas e revertidas para a versão estável.
 
 
+
+##  Analisando minha estrutura de projetos
 
  O primeiro passo para analisar a sua estrutura de projetos atual é instalando o pacote de análise cargo-modules
  
