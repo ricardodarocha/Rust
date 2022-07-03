@@ -18,8 +18,8 @@ Se você organizar bem o seu código, você terá menos trabalho para encontrar 
 - [x] Alta produtividade
 
 acesse a minha curadoria de projetos Rust com base na arquitetura
-[Projetos Rust]()
-[Design patterns em Rust]()
+[Projetos Rust](https://github.com/ricardodarocha/Rust/tree/main/Curadoria)
+[Design patterns em Rust](https://github.com/ricardodarocha/Rust/tree/main/DesignPattern)
 
 ## Criando uma estrutura de Projetos
 
