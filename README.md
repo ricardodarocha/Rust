@@ -320,7 +320,7 @@ salvar_no_arquivo(mensagem);
 ```
 A linguagem ubíqua é um conceito do DDD que prega ao desenvolvedor utilizar aspectos da língua falada ao escrever seu código, isto é, deve-se utilizar um formato de narrativa que se aproxime da língua dos usuários finais, utilizando inclusive as mesmas palavras que ele utiliza para descrever aquela rotina. Veja que ao utilizar esta técnica o código fica mais fluido, e mais simples de ler, um dos preceitos do código limpo.
 
-## Outras lições da linguagem com este exemplo básico.
+## Outras lições da linguagem com este exemplo básico
 
 Em Rust você não é obrigado a utilizar **return**
 Ao deixar o valor sem ponto e vírgula na última linha de uma função ele será retornando automaticamente
