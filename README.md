@@ -72,30 +72,43 @@ https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs
 
 # A
 
+Actix  
+Ambiente, configurando  
+Ambiente, variáveis de  (ver env)
+Argumentos, Args  
 API  
 Arquivos  
 Aplicativos de Linha de Comando (ver CLI)  
 Aplicativos Desktop (ver Desktop)
+Aplicativos Web (ver Web)  
+Arduino  
+ASM  
+
 
 # B
 
 Banco de Dados  
+Binários, Bin  
 
 # C
 
-Chat  
+Chat 
+CLAP  
 CLI  
 Cores  
  
 # D
 
+Debug  
 Design Patterns  
 Desktop  
+Documentação, Doc  
 
 # E
 
 E-mail
-Enumerados, Enum  
+Enumerados, Enum 
+env, .env    
 Estruturas de Dados (ver Struct)  
 
 # F
@@ -104,15 +117,62 @@ Firebird
 
 # G
 
+Games (ver Jogos)  
+GUI  
+
+
 # H
 
+Hello world  
 HTML  
 
 # I
 
+
+
 # J
 
+Jogos  
 Json  
+
+# L
+
+Log  
+
+# M
+
+Macros  
+Models, Modelos  
+Módulos  
+
+# P
+
+Parâmetros (ver args)
+Playground  
+
+# S
+
+SQL  
+Struct  
+Strings  
+
+# T
+
+Tauri  
+Testes
+Trait  
+Tipos  
+
+
+# V
+
+Variáveis
+Variáveis de ambiente (ver env)  
+Vue.js  
+
+# X  
+
+XML  
 
 🚧 Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
 
