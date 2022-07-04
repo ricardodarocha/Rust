@@ -51,7 +51,7 @@ fn main() {
 }
 ```
 
-# Correspondência
+# 🦀 Dica
 
 o padrão **match** é um dos recursos mais importantes da linguagem Rust
 
