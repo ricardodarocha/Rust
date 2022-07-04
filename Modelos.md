@@ -38,7 +38,7 @@ Em Rust Models são fortemente tipados, e possuem apenas os dados de uma regra d
 No entanto podemos extender nosssos modelos para admitir comportamento, por meio da **implementação de traits**
 
 ---
-# Implementação de Models
+
 
 # Implementação de traits
 
@@ -53,4 +53,34 @@ No entanto há uma série de diferenças que tornam traits um tanto mais interes
 
 Traits admitem implementações padrão  
 
+# Enriquecendo modelos com traits padrão
+
+Algumas traits padrão já são fornecidas pela linguagem e permitem estender as funcionalidades dos nossos models. Por exemplo podemos estender nossos models para admitir que eles sejam mostrados como uma string em uma chamada format!, write! ou print! 
+
+## Estendendo a funcionalidade Display
+
+um bloco de código vale mais que mil palavas
+```
+struct User {
+    name: String,
+    email: String,
+}
+
+impl fmt::Display for User {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+      write!(f, "{} <{}>", self.name, self.email)
+    }
+}
+
+fn main() {
+    let new_user = User {
+        name: "Benjamin Lannon".to_string(),
+        email: "email@example.com".to_string()
+    }
+
+    println!("{}", new_user); // Prints out "Benjamin Lannon <email@example.com>"
+}
+```
+
+Fonte: https://lannonbr.com/blog/rust-display-impl/
 
