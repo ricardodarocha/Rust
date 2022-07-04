@@ -7,7 +7,7 @@ Um repositório para estudar Rust do começo
 ---
 
 Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
-Com o passar do tempo, eu fui percebendo que o material aqui poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
+Com o passar do tempo, eu fui percebendo que isso poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
 
 Eu criei o formulário abaixo para examinar os interesses da comunidade.  
 Por favor, responda a algumas perguntas bem rapidinho.
