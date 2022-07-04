@@ -83,6 +83,7 @@ Aplicativos Desktop (ver Desktop)
 Aplicativos Web (ver Web)  
 Arduino  
 ASM  
+Atributos (ver Models)  
 
 
 # B
@@ -95,7 +96,8 @@ Binários, Bin
 Chat 
 CLAP  
 CLI  
-Cores  
+Cores
+CSV  
  
 # D
 
@@ -109,8 +111,10 @@ DOD
 # E
 
 E-mail
+Entidades (ver Models)  
 Enumerados, Enum 
 env, .env    
+Erros  
 Estruturas de Dados (ver Struct)  
 
 # F
@@ -155,6 +159,11 @@ Playground
 POO  
 Postgres  
 
+# R
+
+Result  
+Return  
+
 # S
 
 SQL  
@@ -167,6 +176,7 @@ Tauri
 Testes
 Trait  
 Tipos  
+Tuplas  
 
 # V
 
