@@ -47,7 +47,7 @@ const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 fn main() {
     /// neste exemplo, além de aprender a exibir a versão você também aprendeu como formatar valores na mensagem
-    println!("Olá, mundo! \nThis is version {}", VERSION);
+    println!("Olá, mundo! \nEsta é a versão {}", VERSION);
 }
 ```
 
