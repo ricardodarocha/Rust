@@ -474,11 +474,15 @@ A lot of other [TUI libraries](https://lib.rs/command-line-interface)
 
 # Api 
 
-Este é um guia para criar APIS com Rust
-Clone o repositório e altere routes.rs
-https://github.com/ricardodarocha/newapi
+Este é um guia para criar [Api com Rust](https://github.com/ricardodarocha/newapi)  
 
-Neste exemplo eu mostro como criar uma API do zero.
+Para criar apis avançadas com acesso ao banco de dados acesse
+[Api Postgres](https://github.com/ricardodarocha/sqlxpg)
+
+## Api básica
+
+Neste exemplo eu mostro como criar uma API do zero  
+Clone o repositório e altere routes.rs
 
 Comece com o arquivo `main.rs`
 
