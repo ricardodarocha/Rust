@@ -78,6 +78,7 @@ Ambiente, variáveis de  (ver env)
 Argumentos, Args  
 API  
 Arquivos  
+Arquitetura  
 Aplicativos de Linha de Comando (ver CLI)  
 Aplicativos Desktop (ver Desktop)
 Aplicativos Web (ver Web)  
@@ -88,7 +89,8 @@ Atributos (ver Models)
 
 # B
 
-Banco de Dados  
+Banco de Dados 
+BI  
 Binários, Bin  
 
 # C
@@ -101,6 +103,7 @@ CSV
  
 # D
 
+Dashboard  
 DDD  
 Debug  
 Design Patterns  
@@ -115,6 +118,7 @@ Entidades (ver Models)
 Enumerados, Enum 
 env, .env    
 Erros  
+Estatística  
 Estruturas de Dados (ver Struct)  
 
 # F
@@ -124,6 +128,8 @@ Firebird
 # G
 
 Games (ver Jogos)  
+Gráficos  
+Grafos  
 GUI  
 
 
@@ -134,7 +140,9 @@ HTML
 
 # I
 
-
+IP  
+Internet  
+Instaladores  
 
 # J
 
