@@ -147,8 +147,9 @@ Módulos
 
 # P
 
-Parâmetros (ver args)
+Parâmetros (ver args)  
 Playground  
+Postgres  
 
 # S
 
@@ -162,7 +163,6 @@ Tauri
 Testes
 Trait  
 Tipos  
-
 
 # V
 
