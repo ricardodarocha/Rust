@@ -503,7 +503,7 @@ Veja [como criar módulos](https://github.com/ricardodarocha/Rust/edit/main/READ
 
 # Arquiteturas com RUST
 
-Nesta seção eu reúno meus estudos mais recentes sobre Arquiteturas com Rust, inclusive comparando com outras linguagens e discutindo as vantanges e desvantanges de cada um. Eu convido fortemente a comunidade a participar desta discussão aqui [link]
+Nesta seção eu reúno meus estudos mais recentes sobre Arquiteturas com Rust, inclusive comparando com outras linguagens e discutindo as vantanges e desvantanges de cada um. [link](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)
 
 # Links
 
