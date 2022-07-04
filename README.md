@@ -182,11 +182,11 @@ A sequência de estudo que eu tenho aprimorado para você que está começando d
 
 ## Ler um arquivo de configurações .env
 
-É comum controlarmos algumas configurações pelo próprio cargo.toml. Como eu expliquei no exemplo hello world, a versão, o autor e outras informações do binário podem ser declaradas explicitamente no arquivo cargo.toml.
+É comum controlarmos algumas configurações pelo próprio cargo.toml. Como eu expliquei no exemplo Olá Mundo, a versão, o autor e outras informações do binário podem ser declaradas explicitamente no arquivo cargo.toml.
 Mas é interessante deixar outras informações em um arquivo .env, que você pode ler facilmente com o tutorial a seguir
 
+src/.env
 ```Rust
-/// Now we just read the values stored in .env file
 /// ```ini
 /// user_name=admin
 /// ```
