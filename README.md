@@ -1,28 +1,32 @@
 # Rust
 
 Um repositório para estudar Rust do começo  
-🚧 **Em construção**  
+
+🚀 **Este repositório está crescendo rápido**  
 
 ---
 
-Este material começou com meu interesse pessoal em aprender Rust.    
-Aos poucos, está se tornando um guia para outras pessoas que querem aprender Rust.  
-Se você quer aprender Rust comigo responda à pesquisa e me ajude a entender o seu perfil.  
+Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
+Com o passar do tempo, eu fui percebendo que o material aqui poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
+
+Eu criei o formulário abaixo para examinar os interesses da comunidade.  
+Por favor, responda a algumas perguntas bem rapidinho.
 https://forms.gle/g5Y6V3g5ag75qcPg8  
 
-# Prefácio
+# Introdução
 
 Se você não tem conhecimento de qualquer linguagem de programação, é recomendado aprender os fundamentos primeiro.   
 Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
 **Rust** é uma linguagem excelente, mas possui vários recursos avançados, e não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
 
-# Intro
+Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](https://livro.rustbr.org/), acessando a [Documentação](https://www.rust-lang.org/pt-BR/). Há muitos cursos na internet mas o que eu recomendo é você fazer parte da comunidade de desenvolvedores. Cadastre-se em fóruns e grupos colaborativos, monte um repositório e compartilhe com os colegas. E claro, se inscreva nos canais de Rust no Brasil e no Exterior e fique por dentro de tudo que acontece neste universo maravilhoso que é o Rust.
 
-Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](https://livro.rustbr.org/) , acessando a [Documentação](https://www.rust-lang.org/pt-BR/) ou fazendo cursos pela internet.  
-Para exercitar você precisa configurar um ambiente. 
+Para exercitar o que você vai aprender, primeiro configure um ambiente. 
 [Diversas formas de configurar um ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
 
-# Olá Mundo
+ou Brinque no [Rust Playground](https://play.rust-lang.org/) antes de configurar um ambiente local.
+
+# Primeiro exercício
 
 A forma mais comum de aprender uma linguagem é começar pelo exemplo _Olá mundo_.  
 
