@@ -78,7 +78,7 @@ Ambiente, variáveis de  (ver env)
 Argumentos, Args  
 API  
 Arquivos  
-Arquitetura  
+[Arquitetura](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)  
 Aplicativos de Linha de Comando (ver CLI)  
 Aplicativos Desktop (ver Desktop)
 Aplicativos Web (ver Web)  
