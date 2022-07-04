@@ -95,7 +95,7 @@ Binários, Bin
 
 # C
 
-Chat 
+[Chat](https://github.com/ricardodarocha/rust-chat)   
 CLAP  
 CLI  
 Cores
