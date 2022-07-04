@@ -99,10 +99,12 @@ Cores
  
 # D
 
+DDD  
 Debug  
 Design Patterns  
 Desktop  
 Documentação, Doc  
+DOD  
 
 # E
 
@@ -137,6 +139,7 @@ Json
 
 # L
 
+Linguagem Ubíqua  
 Log  
 
 # M
@@ -149,6 +152,7 @@ Módulos
 
 Parâmetros (ver args)  
 Playground  
+POO  
 Postgres  
 
 # S
