@@ -19,7 +19,9 @@ Se você não tem conhecimento de qualquer linguagem de programação, é recome
 Aprenda **Python** ou **C** para compreender como as linguagens de programação funcionam.  
 **Rust** é uma linguagem excelente, mas possui vários recursos avançados, e não é recomedável que você comece por ela. É recomendável que você aprenda **Rust** como segunda linguagem até se tornar experiente.  
 
-Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust](https://livro.rustbr.org/), acessando a [Documentação](https://www.rust-lang.org/pt-BR/). Há muitos cursos na internet mas o que eu recomendo é você fazer parte da comunidade de desenvolvedores. Cadastre-se em fóruns e grupos colaborativos, monte um repositório e compartilhe com os colegas. E claro, se inscreva nos canais de Rust no Brasil e no Exterior e fique por dentro de tudo que acontece neste universo maravilhoso que é o Rust.
+Veja minha [trilha de python](https://github.com/ricardodarocha/Python)
+
+Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust Oficial](https://livro.rustbr.org/), acessando a [Documentação](https://www.rust-lang.org/pt-BR/). Há muitos cursos na internet mas o que eu recomendo é você fazer parte da comunidade de desenvolvedores. Cadastre-se em fóruns e grupos colaborativos, monte um repositório e compartilhe com os colegas. E claro, se inscreva nos canais de Rust no Brasil e no Exterior e fique por dentro de tudo que acontece neste universo maravilhoso do Rust.
 
 Para exercitar o que você vai aprender, primeiro configure um ambiente. 
 [Diversas formas de configurar um ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
@@ -31,16 +33,14 @@ ou Brinque no [Rust Playground](https://play.rust-lang.org/) antes de configurar
 A forma mais comum de aprender uma linguagem é começar pelo exemplo _Olá mundo_.  
 
 ```Rust
-//const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 fn main() {
     println!("Olá, mundo!");
 }
-```
+```[tente agora](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=58b8666302b1dfb3863d0de5e17286ee)
+
 Há algumas variações deste programa que eu explico aqui, com o objetivo de incrementalmente ir aprendendo novos recursos. Vou utilizar comentários no código para explicar. Veja o tutorial sobre [Como comentar códigos Rust](https://github.com/ricardodarocha/Rust/edit/main/Documentando.md).
 
-
 ```Rust
-
 /// Disponibilizando diferentes versões para o seu usuário
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
