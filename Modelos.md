@@ -60,7 +60,7 @@ Algumas traits padrão já são fornecidas pela linguagem e permitem estender as
 ## Estendendo a funcionalidade Display
 
 um bloco de código vale mais que mil palavas
-```
+```Rust
 struct User {
     name: String,
     email: String,
