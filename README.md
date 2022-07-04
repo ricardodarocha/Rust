@@ -89,7 +89,7 @@ Atributos (ver Models)
 
 # B
 
-Banco de Dados 
+Banco de Dados  
 BI  
 Binários, Bin  
 
@@ -98,7 +98,7 @@ Binários, Bin
 [Chat](https://github.com/ricardodarocha/rust-chat)   
 CLAP  
 CLI  
-Cores
+Cores  
 CSV  
  
 # D
@@ -108,12 +108,12 @@ DDD
 Debug  
 Design Patterns  
 Desktop  
-Documentação, Doc  
+Documentação, Doc    
 DOD  
 
 # E
 
-E-mail
+E-mail  
 Entidades (ver Models)  
 Enumerados, Enum 
 env, .env    
@@ -123,7 +123,7 @@ Estruturas de Dados (ver Struct)
 
 # F
 
-Firebird
+Firebird  
 
 # G
 
@@ -131,7 +131,6 @@ Games (ver Jogos)
 Gráficos  
 Grafos  
 GUI  
-
 
 # H
 
