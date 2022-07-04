@@ -68,7 +68,51 @@ match x {
 
 https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs
 
-# Aprendendo de A a Z
+### Índice remissivo
+
+# A
+
+API  
+Arquivos  
+Aplicativos de Linha de Comando (ver CLI)  
+Aplicativos Desktop (ver Desktop)
+
+# B
+
+Banco de Dados  
+
+# C
+
+Chat  
+CLI  
+Cores  
+ 
+# D
+
+Design Patterns  
+Desktop  
+
+# E
+
+E-mail
+Enumerados, Enum  
+Estruturas de Dados (ver Struct)  
+
+# F
+
+Firebird
+
+# G
+
+# H
+
+HTML  
+
+# I
+
+# J
+
+Json  
 
 🚧 Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
 
