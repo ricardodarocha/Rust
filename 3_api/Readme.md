@@ -22,17 +22,20 @@ HttpServer::new(|| {
     .await
 ```
 
-Neste exemplo eu recomendo você começar com dois arquivos, ou seja
+Neste exemplo eu recomendo que você comece com dois arquivos, ou seja
 a regra de negócios principal fica no main.rs, onde você expõe o servidor e suas configurações básicas, como a porta.
 As rotas você deve deixar no arquivo routes.rs.
-Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode se tornar grande com o tempo, e mesmo para projetos pequenos, você criar uma melhora separação das responsabilidades.
+Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode se tornar grande com o tempo, e mesmo para projetos pequenos, você criar uma melhor separação dos arquivos.
 
 ## Tutorial Completo
 
-Neste exemplo completo nós iremos criar uma API com RUST que poderá ser acessada em uma porta e retornar um JSON
-Possui também recursos de navegação, onde em cada rota acessada com método GET será retornado um JSON específico
-Nos próximos tutoriais serão criadas outras funcionalidades como uma rota com método POST PUT e DELETE
+Neste exemplo de API iremos retornar um Json  
 
+Esta api possui rotas que podem ser acessadas com método GET  
+Para cada rota, será retornado um JSON específico e uma mensagem de sucesso 200 OK  
+Nos próximos tutoriais serão criadas outras funcionalidades como uma rota com método POST PUT e DELETE, e retornos personalizados  
+
+🦀
 Abrir a linha de comandos em uma pasta de projetos e dentro dela rodar o comando
 
 ```shell
