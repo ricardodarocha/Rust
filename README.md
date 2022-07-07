@@ -211,9 +211,42 @@ XML
 
 A sequência de estudo que eu tenho aprimorado para você que está começando do zero é a seguinte. E eu vou tentar explicar a razão disso:
 
-## Ler um arquivo de configurações .env
+## Ler um arquivo de configurações (.env .ini .xml .json)
 
-É comum controlarmos algumas configurações pelo próprio cargo.toml. Como eu expliquei no exemplo Olá Mundo, a versão, o autor e outras informações do binário podem ser declaradas explicitamente no arquivo cargo.toml.
+Para salvar arquivos de configuração escolha uma extensão de arquivo
+Há libs específicas para cada formato de arquivo, que eu vou mostrar a seguir
+
+### Informações do binário
+
+O arquivo cargo.toml possui informações básicas do binário
+
+_cargo.toml_
+```
+[package]
+name = "my_package"
+version = "0.0.1"
+repository = "https://github.com/rust-lang/my-package/"
+license = "MIT OR Apache-2.0"
+authors = "Ricardo da Rocha"
+
+[dependencies]
+```
+
+_main.rs_
+```
+const VERSION: &'static str = env!("CARGO_PKG_VERSION");
+const AUTHORS: &'static str = env!("CARGO_PKG_AUTHORS");
+
+fn main() {
+  println!("Hello, world! \nThis is version {} \nThanks to {}", VERSION, AUTHORS);
+  }
+```
+[doc](https://doc.rust-lang.org/cargo/reference/manifest.html)  
+
+
+### .env variáveis de ambiente
+
+
 Mas é interessante deixar outras informações em um arquivo .env, que você pode ler facilmente com o tutorial a seguir
 
 src/.env
