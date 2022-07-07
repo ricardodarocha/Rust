@@ -214,7 +214,7 @@ A sequência de estudo que eu tenho aprimorado para você que está começando d
 
 ## Ler um arquivo de configurações (.env .ini .xml .json)
 
-Para salvar arquivos de configuração escolha uma extensão de arquivo
+Para gerenciar as configurações do usuário escolha uma extensão de arquivo
 Há libs específicas para cada formato de arquivo, que eu vou mostrar a seguir
 
 ### Informações do binário
