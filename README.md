@@ -10,7 +10,7 @@ Um repositório para estudar Rust do começo
 - [Postgres](https://github.com/ricardodarocha/sqlxpg)  
 ---
 
-Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
+Eu tenho um interesse especial por **Rust!** Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
 Com o passar do tempo, eu fui percebendo que isso poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
 
 Eu criei o formulário abaixo para examinar os interesses da comunidade.  
