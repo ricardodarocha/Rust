@@ -6,6 +6,11 @@
 
 🐘 Acesse o guia mais recente para criar [**APIS com RUST + Postgres**](https://github.com/ricardodarocha/sqlxpg)
 
+``` 
+💬 Há várias maneiras de criar APIS com Rust, inclusive há diversas libs entre elas Actix, Tokio, Axum,  
+   Algumas possuem suporte a assíncrono, threads e outros recursos. Neste exemplo eu criei   
+   a API da maneira mais simples possível, sem instalar nenhuma lib externa e sem complicações  
+```
 Neste exemplo eu mostro como criar uma API do zero.
 
 Comece com o arquivo `main.rs`
