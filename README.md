@@ -208,7 +208,7 @@ XML
 
 🚧 Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
 
-# Continuando o tutorial
+# Parte I  
 
 A sequência de estudo que eu tenho aprimorado para você que está começando do zero é a seguinte. E eu vou tentar explicar a razão disso:
 
