@@ -54,6 +54,8 @@ cargo new api_name --bin
 code .
 ```
 
+🚧 _em manutenção_
+
 # Veja mais
 
 Trabalhando com [JSON]()
