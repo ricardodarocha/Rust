@@ -54,6 +54,19 @@ cargo new api_name --bin
 code .
 ```
 
+abra o arquivo **cargo.toml** que possui todas as configurações do projeto  
+inclua a dependência para **actix**
+
+```Rust
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021" 
+
+[dependencies]
+actix-web = "4"
+```
+
 🚧 _em manutenção_
 
 # Veja mais
