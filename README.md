@@ -150,7 +150,7 @@ Instaladores
 # J
 
 Jogos  
-[Json](##Lendo-JSON)  
+[Json](#lendo-json)  
 
 # L
 
