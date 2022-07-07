@@ -4,7 +4,7 @@
 
 🐤 Este é um exemplo para **criar APIS com o RUST**
 
-🐘 Acesse o guia mais recente para criar [**APIS com RUST + Postgres**](https://github.com/ricardodarocha/sqlxpg)
+🐘 Acesse também esta dica recente para criar [**APIS com RUST + Postgres**](https://github.com/ricardodarocha/sqlxpg)
 
 Neste exemplo eu mostro como criar uma API do zero
 ``` 
