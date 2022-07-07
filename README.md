@@ -41,7 +41,7 @@ fn main() {
     println!("Olá, mundo!");
 }
 ```
-[tente agora](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=58b8666302b1dfb3863d0de5e17286ee)
+[tente agora on-line!](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=58b8666302b1dfb3863d0de5e17286ee)
 
 Há algumas variações deste programa que eu explico aqui, com o objetivo de incrementalmente ir aprendendo novos recursos. Vou utilizar comentários no código para explicar. Veja o tutorial sobre [Como comentar códigos Rust](https://github.com/ricardodarocha/Rust/edit/main/Documentando.md).
 
