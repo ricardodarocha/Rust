@@ -80,7 +80,7 @@ Actix
 Ambiente, configurando  
 Ambiente, variáveis de  (ver env)
 Argumentos, Args  
-API  
+[Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
 Arquivos  
 [Arquitetura](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)  
 Aplicativos de Linha de Comando (ver CLI)  
