@@ -218,7 +218,7 @@ Há libs específicas para cada formato de arquivo, que eu vou mostrar a seguir
 
 ### Informações do binário
 
-O arquivo cargo.toml possui informações básicas do binário
+O arquivo **cargo.toml** possui informações básicas do binário
 
 _cargo.toml_
 ```
@@ -232,6 +232,7 @@ authors = "Ricardo da Rocha"
 [dependencies]
 ```
 
+Acesse estas informações utilizando constantes estáticas  
 _main.rs_
 ```
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
@@ -243,12 +244,15 @@ fn main() {
 ```
 [doc](https://doc.rust-lang.org/cargo/reference/manifest.html)  
 
+### Ler um arquivo ini
+
+https://github.com/mexili/ini-rs
+
 
 ### .env variáveis de ambiente
 
-
-Mas é interessante deixar outras informações em um arquivo .env, que você pode ler facilmente com o tutorial a seguir
-
+Acesse as variáveis de ambiente, ou configure o ambiente utilizando um arquivo **.env**  
+ 
 src/.env
 ```Rust
 /// ```ini
@@ -260,7 +264,7 @@ println!("KEY", env::var("user_name").unwrap());
 env::set_var("password", "unbush84likely8Fdetail42");
 ```
 
-## Ler os parâmetros da aplicação com args()
+### passando parâmetros para a aplicação com args()
 
 Ao executar uma aplicação pela linha de comandos, você pode passar parâmetros para ela
 ```Shell
