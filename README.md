@@ -6,8 +6,8 @@ Um repositório para estudar Rust do começo
 
 - [Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)  
 - [Hello World](#primeiro-exercício)  
-- [Api](#primeiro-exercício)  
-- [Postgres](https://github.com/ricardodarocha/sqlxpg)
+- [Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
+- [Postgres](https://github.com/ricardodarocha/sqlxpg)  
 ---
 
 Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
