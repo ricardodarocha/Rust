@@ -4,8 +4,10 @@ Um repositório para estudar Rust do começo
 
 🚀 **Este repositório está crescendo rápido**  
 
-[Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
-[Hello World](#primeiro_exercicio)
+- [Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)  
+- [Hello World](#primeiro-exercício)  
+- [Api](#primeiro-exercício)  
+- [Postgres](https://github.com/ricardodarocha/sqlxpg)
 ---
 
 Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
