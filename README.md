@@ -4,6 +4,8 @@ Um repositório para estudar Rust do começo
 
 🚀 **Este repositório está crescendo rápido**  
 
+[Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
+[Hello World](#primeiro_exercicio)
 ---
 
 Eu tenho um interesse especial por Rust! Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
