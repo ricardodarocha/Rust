@@ -330,7 +330,7 @@ let mensagem = format!("Olá {destinatario}!", destinatario = name)
 
 # Parte II
 
-#🦀
+# 🦀
 
 Boas práticas de desenvolvimento e dicas de projeto  
 
