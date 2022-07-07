@@ -75,8 +75,8 @@ match x {
 ### módulos de estudo
 
 [parte 1](#parte-i)  
-[parte 2]()  
-[parte 3]()  
+[parte 2](#parte-ii)  
+[parte 3](#parte-iii)  
 
 ### Índice remissivo
 
