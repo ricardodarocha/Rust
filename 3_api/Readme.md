@@ -58,5 +58,5 @@ code .
 
 # Veja mais
 
-Trabalhando com [JSON]()  
-Veja [como criar módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)  
+Trabalhando com [JSON](https://github.com/ricardodarocha/Rust#lendo-json)  
+Como criar [módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)  
