@@ -45,8 +45,8 @@ Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode
 
 ## Tutorial Completo
 
-Neste tutorial mais detalhado eu mostro como criar o projeto utilizando o CMD e como compilar os binários
-🦀
+Neste tutorial mais detalhado eu mostro como criar o projeto utilizando o CMD e como compilar os binários  
+🦀  
 Abrir a linha de comandos em uma pasta de projetos e dentro dela rodar o comando
 
 ```shell
