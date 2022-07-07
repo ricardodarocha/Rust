@@ -328,6 +328,12 @@ let mensagem = format!("Olá {destinatario}!", destinatario = name)
 }
 ```
 
+# Parte II
+
+#🦀
+
+Boas práticas de desenvolvimento e dicas de projeto  
+
 ## Refatorando em métodos
 
 Em qualquer linguagem de programação é uma boa prática manter o código limpo, e nunca criar funções muito grandes que tenham várias responsabilidades. Isto pode tornar o código confuso. Por isso nós vamos começar a refatorar o nosso código para quebrá-lo em vários métodos.
