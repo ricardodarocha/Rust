@@ -70,7 +70,13 @@ match x {
 }
 ```
 
-https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs
+[match](https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs)  
+
+### módulos de estudo
+
+[parte 1]()  
+[parte 2]()  
+[parte 3]()  
 
 ### Índice remissivo
 
