@@ -55,7 +55,7 @@ code .
 ```
 
 abra o arquivo **cargo.toml** que possui todas as configurações do projeto  
-inclua a dependência para **actix**
+inclua a dependência para **actix-web**
 
 ```Rust
 [package]
@@ -65,6 +65,22 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
+```
+Crie dois arquivos  
+main.rs  
+routes.rs  
+
+ou clone este repositório
+
+```
+git clone 
+```
+
+Em seguida rode o programa
+
+```shell
+cargo new api_name --bin
+code .
 ```
 
 🚧 _em manutenção_
