@@ -107,6 +107,7 @@ Binários, Bin
 
 [Chat](https://github.com/ricardodarocha/rust-chat)   
 CLAP  
+[Configurações do usuário](#ler-um-arquivo-de-configurações-env-ini-xml-json)  
 CLI  
 Cores  
 CSV  
@@ -148,7 +149,7 @@ Hello world
 HTML  
 
 # I
-[Ini, \*.ini](https://github.com/mexili/ini-rs)  
+[Ini, \*.ini](#ler-um-arquivo-ini)  
 IP  
 Internet  
 Instaladores  
@@ -246,7 +247,7 @@ fn main() {
 
 ### Ler um arquivo ini
 
-https://github.com/mexili/ini-rs
+[doc](https://github.com/mexili/ini-rs)
 
 
 ### .env variáveis de ambiente
@@ -285,6 +286,24 @@ println!("Olá {}!", name)
 }
 ```
 
+## Ler arquivos 
+
+Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
+
+Há duas formas principais de ler estes arquivos, que eu divido em 
+
+  [Ler um arquivo simples]() A maneir mais prática mas nem sempre resolve.  
+  [Ler um arquivo grande no formato de stream]() Esta maneira poderoso permite gerenciar o uso de memória e ler arquivos gigantes. 
+  
+Veja este exemplo básico
+
+```Rust
+    let mut file = File::open("mensagem.txt")?;
+    let mut conteudo = String::new();
+    file.read_to_string(&mut conteudo)?;
+    assert_eq!(conteudo, "Hello, world!");
+```
+
 ## Salvar um arquivo localmente
 
 Ao interagir com o seu programa o usuário o alimenta com dados. Muitas vezes é conveniente armazenar estes dados para serem recuperados no futuro, mesmo quando o programa é fechado e após abrí-lo novamente, o usuário pode precisar reutilizar estes dados ou compartilhá-los com outros dispositivos por exemplo. Neste exemplo eu mostro como salvar dados localmente ou em rede.
@@ -306,24 +325,6 @@ let mensagem = format!("Olá {destinatario}!", destinatario = name)
     let mut file = File::create("mensagem.txt")?;
     file.write_all(men sagem)?;
 }
-```
-
-## Ler arquivos 
-
-Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
-
-Há duas formas principais de ler estes arquivos, que eu divido em 
-
-  [Ler um arquivo simples]() A maneir mais prática mas nem sempre resolve.  
-  [Ler um arquivo grande no formato de stream]() Esta maneira poderoso permite gerenciar o uso de memória e ler arquivos gigantes. 
-  
-Veja este exemplo básico
-
-```Rust
-    let mut file = File::open("mensagem.txt")?;
-    let mut conteudo = String::new();
-    file.read_to_string(&mut conteudo)?;
-    assert_eq!(conteudo, "Hello, world!");
 ```
 
 ## Refatorando em métodos
