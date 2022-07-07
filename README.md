@@ -77,7 +77,7 @@ https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs
 # A
 
 Actix  
-Ambiente, configurando  
+[Ambiente, configurando](https://www.rust-lang.org/pt-BR/tools/install)  
 Ambiente, variáveis de  (ver env)
 Argumentos, Args  
 [Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
