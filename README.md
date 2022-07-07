@@ -46,11 +46,11 @@ fn main() {
 Há algumas variações deste programa que eu explico aqui, com o objetivo de incrementalmente ir aprendendo novos recursos. Vou utilizar comentários no código para explicar. Veja o tutorial sobre [Como comentar códigos Rust](https://github.com/ricardodarocha/Rust/edit/main/Documentando.md).
 
 ```Rust
-/// Disponibilizando diferentes versões para o seu usuário
+// Disponibilizando diferentes versões para o seu usuário
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 
 fn main() {
-    /// neste exemplo, além de aprender a exibir a versão você também aprendeu como formatar valores na mensagem
+    // neste exemplo, além de aprender a exibir a versão você também aprendeu como formatar valores na mensagem
     println!("Olá, mundo! \nEsta é a versão {}", VERSION);
 }
 ```
