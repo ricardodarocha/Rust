@@ -2,7 +2,7 @@
 
 ## Intro
 
-🐤 Este é um guia para **criação de APIS com RUST**
+🐤 Este é um exemplo para **criar APIS com o RUST**
 
 🐘 Acesse o guia mais recente para criar [**APIS com RUST + Postgres**](https://github.com/ricardodarocha/sqlxpg)
 
