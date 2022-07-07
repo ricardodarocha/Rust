@@ -222,7 +222,7 @@ Há libs específicas para cada formato de arquivo, que eu vou mostrar a seguir
 O arquivo **cargo.toml** possui informações básicas do binário
 
 _cargo.toml_
-```
+```Rust
 [package]
 name = "my_package"
 version = "0.0.1"
@@ -236,7 +236,7 @@ authors = "Ricardo da Rocha"
 Acesse estas informações utilizando constantes estáticas  
 
 _main.rs_
-```
+```Rust
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
 const AUTHORS: &'static str = env!("CARGO_PKG_AUTHORS");
 
