@@ -234,6 +234,7 @@ authors = "Ricardo da Rocha"
 ```
 
 Acesse estas informações utilizando constantes estáticas  
+
 _main.rs_
 ```
 const VERSION: &'static str = env!("CARGO_PKG_VERSION");
