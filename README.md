@@ -74,7 +74,7 @@ match x {
 
 ### módulos de estudo
 
-[parte 1]()  
+[parte 1](#parte-i)  
 [parte 2]()  
 [parte 3]()  
 
