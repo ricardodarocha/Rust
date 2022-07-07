@@ -10,7 +10,7 @@ Neste exemplo eu mostro como criar uma API do zero
 ``` 
 💬 Há várias maneiras de criar APIS com Rust, inclusive há diversas libs entre elas Actix, Tokio, Axum,  
    Algumas possuem suporte a assíncrono, threads e outros recursos. Neste exemplo eu criei   
-   a API da maneira mais simples possível, sem instalar nenhuma lib externa e sem complicações  
+   a API da maneira mais simples possível, com Actix
 ```
 
 Comece com o arquivo `main.rs`
@@ -20,12 +20,23 @@ HttpServer::new(|| {
         App::new()
             .service(routes::hello)
             .service(routes::echo)
-            .route("/hey", web::get().to(routes::manual_hello))
+            .route("/hey", web::get().to(routes::hello_world))
     })
     .bind(("127.0.0.1", port))?
     .run()
     .await
 ```
+
+em seguida registre suas rotas 
+
+```
+#[get("/")]
+pub async fn hello_world() -> impl Responder {
+    HttpResponse::Ok().body("Hello world!")
+}
+```
+
+e rode o comando **cargo run** no shell
 
 Neste exemplo eu recomendo que você comece com dois arquivos, ou seja
 a regra de negócios principal fica no main.rs, onde você expõe o servidor e suas configurações básicas, como a porta.
@@ -34,12 +45,7 @@ Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode
 
 ## Tutorial Completo
 
-Neste exemplo de API iremos retornar um Json  
-
-Esta api possui rotas que podem ser acessadas com método GET  
-Para cada rota, será retornado um JSON específico e uma mensagem de sucesso 200 OK  
-Nos próximos tutoriais serão criadas outras funcionalidades como uma rota com método POST PUT e DELETE, e retornos personalizados  
-
+Neste tutorial mais detalhado eu mostro como criar o projeto utilizando o CMD e como compilar os binários
 🦀
 Abrir a linha de comandos em uma pasta de projetos e dentro dela rodar o comando
 
