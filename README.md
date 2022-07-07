@@ -142,7 +142,7 @@ Hello world
 HTML  
 
 # I
-
+[Ini, \*.ini](https://github.com/mexili/ini-rs)  
 IP  
 Internet  
 Instaladores  
@@ -150,7 +150,7 @@ Instaladores
 # J
 
 Jogos  
-Json  
+[Json](##Lendo-JSON)  
 
 # L
 
