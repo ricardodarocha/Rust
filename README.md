@@ -30,7 +30,7 @@ Você pode facilmente aprender **Rust** na internet, lendo o [Livro de Rust Ofic
 Para exercitar o que você vai aprender, primeiro configure um ambiente. 
 [Diversas formas de configurar um ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)
 
-ou Brinque no [Rust Playground](https://play.rust-lang.org/) antes de configurar um ambiente local.
+ou brinque no [Rust Playground](https://play.rust-lang.org/) antes de configurar um ambiente local 🎠
 
 # Primeiro exercício
 
