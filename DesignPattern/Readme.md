@@ -1,7 +1,7 @@
 # Um guia de Design Patterns com Rust
 
-Neste repositório eu explico e mostro exemplos de design pattern com RUST
-
+Neste repositório eu explico e mostro exemplos de design pattern com RUST. 
+Antes de sair por aí implementando design patterns, é recomendável entender [quando não fazê-lo](https://rust-unofficial.github.io/patterns/patterns/index.html)   
 ## O Padrão Builder e o Dialeto Fluent
 
 💬 Utilizar a linguagem ubíqua é a forma mais recomendada para você escrever o ponto de entrada para a sua aplicação `main.rs` `lib.rs`
