@@ -200,9 +200,9 @@ Também admite que há um fluxo predefinido onde um objeto que está em um deter
 🚩 Por exemplo, uma invoice pode representar o estado padrão de uma operação de compra de uma mercadoria. Podemos ilustrar o fluxo assim
 
 ```Mermaid
-flowchart TD
-request-->order
-order-->complete
+graph TD;
+request-->order;
+order-->complete;
 ```
 Note que não é possível uma **request** passar diretamente para o estado de **complete**  
 Primeiro é necessário receber aprovação, que é representado pelo estado **order**
