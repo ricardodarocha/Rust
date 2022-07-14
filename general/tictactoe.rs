@@ -1,6 +1,3 @@
-#[derive(Clone)]
-enum BitBoard {Any, Empty}
-
 enum Player {X, O}
 
 impl Player {
@@ -18,6 +15,9 @@ impl Player {
     }
 }
 
+#[derive(Clone)]
+enum BitBoard {Player(Player), Empty}
+    
 enum Winner {X, O, Empty}
 
 use BitBoard::Any as x;
