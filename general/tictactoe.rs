@@ -9,6 +9,12 @@ impl Player {
             Player::X => Player::O,
             Player::O => Player::X,
         }
+        
+    fn render(&self) {
+        match self{
+            Player::X =>  "🍎",
+            Player::O =>  "🍏",
+        }
     }
 }
 
@@ -29,6 +35,15 @@ fn winner(board: &Vec<BitBoard>, player: Winner) -> Winner {
         _ => Winner::Empty
     }
 }
+   
+fn render(board: &Vec<BitBoard>) {   
+    format!("{} {} {} 
+             {} {} {} 
+             {} {} {}", board[0], 
+                        board[1], 
+                        board[2], 
+                        board[3], )
+    }
 
 fn main() {
     let mut board_x = vec![BitBoard::Empty; 9];
@@ -59,7 +74,7 @@ fn main() {
             _ => print!("Next")
         }
         
-        
+        render(board_x, board_o);
         player = player.next();
   }
 }
