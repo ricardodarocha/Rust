@@ -119,7 +119,7 @@ DDD
 Debug  
 [Default](https://github.com/ricardodarocha/Rust/blob/main/general/default.md)  
 [Display](https://github.com/ricardodarocha/Rust/blob/main/general/display.md)  
-Design Patterns  
+[Design Patterns](https://github.com/ricardodarocha/Rust/tree/main/DesignPattern)  
 Desktop  
 Documentação, Doc    
 DOD  
