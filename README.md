@@ -117,7 +117,8 @@ CSV
 Dashboard  
 DDD  
 Debug  
-Default  
+[Default](https://github.com/ricardodarocha/Rust/blob/main/general/default.md)  
+[Display](https://github.com/ricardodarocha/Rust/blob/main/general/display.md)  
 Design Patterns  
 Desktop  
 Documentação, Doc    
