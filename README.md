@@ -220,7 +220,7 @@ A sequência de estudo que eu tenho aprimorado para você que está começando d
 
 ### Lista de comandos do compilador
 
-```
+```shell
 cargo check //verifica se todos os pacotes estão instalados
 cargo build //compila o binário DEBUG
 cargo run //roda o binário DEBUG
