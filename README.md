@@ -105,6 +105,8 @@ Binários, Bin
 
 # C
 
+[Cargo](#cargo) 
+[Cargo.toml](#cargo.toml)  
 [Chat](https://github.com/ricardodarocha/rust-chat)   
 CLAP  
 [Configurações do usuário](#ler-um-arquivo-de-configurações-env-ini-xml-json)  
@@ -214,6 +216,37 @@ XML
 
 A sequência de estudo que eu tenho aprimorado para você que está começando do zero é a seguinte. E eu vou tentar explicar a razão disso:
 
+## Cargo  
+
+### Lista de comandos do compilador
+
+```
+cargo check //verifica se todos os pacotes estão instalados
+cargo build //compila o binário DEBUG
+cargo run //roda o binário DEBUG
+cargo clippy //verifica a qualidade semântica do algoritmo 
+cargo run --release //roda o binário RELEASE
+```
+## Cargo.toml
+
+### Alterando as informações de propriedade intelectual
+
+Acesse o cargo.toml e edite os atributos da aplicação com as suas informações
+
+```
+description — Uma descrição do programa  
+documentation — O site onde está publicado o pacote rustdoc.rs  
+readme — Um arquivo Markdown local sobre a sua aplicação  
+homepage — O site da aplicação  
+repository — O repositório Github onde está publicado o código fonte  
+license — Tipo de licença  
+license-file — Os termos da licença (txt)  
+keywords — Palavras chave do projeto  
+categories — Categoria do pacote  
+```
+
+[Lista completa de atributos](https://doc.rust-lang.org/cargo/reference/manifest.html)  
+
 ## Ler um arquivo de configurações (.env .ini .xml .json)
 
 Para gerenciar as configurações do usuário escolha uma extensão de arquivo
@@ -246,7 +279,6 @@ fn main() {
   println!("Hello, world! \nThis is version {} \nThanks to {}", VERSION, AUTHORS);
   }
 ```
-[doc](https://doc.rust-lang.org/cargo/reference/manifest.html)  
 
 ### Ler um arquivo ini
 
