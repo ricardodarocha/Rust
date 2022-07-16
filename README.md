@@ -221,11 +221,11 @@ A sequência de estudo que eu tenho aprimorado para você que está começando d
 ### Lista de comandos do compilador
 
 ```shell
-cargo check //verifica se todos os pacotes estão instalados
-cargo build //compila o binário DEBUG
-cargo run //roda o binário DEBUG
-cargo clippy //verifica a qualidade semântica do algoritmo 
-cargo run --release //roda o binário RELEASE
+cargo check #verifica se todos os pacotes estão instalados
+cargo build #compila o binário DEBUG
+cargo run #roda o binário DEBUG
+cargo clippy #verifica a qualidade semântica do algoritmo 
+cargo run --release #roda o binário RELEASE
 ```
 ## Cargo.toml
 
