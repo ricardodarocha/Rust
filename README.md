@@ -153,6 +153,7 @@ Hello world
 HTML  
 
 # I
+Imagens  
 [Ini, \*.ini](#ler-um-arquivo-ini)  
 IP  
 Internet  
@@ -196,6 +197,7 @@ Strings
 
 Tauri  
 Testes
+Texto  
 Trait  
 Tipos  
 Tuplas  
@@ -208,6 +210,7 @@ Vue.js
 
 # X  
 
+Xadrez  
 XML  
 
 🚧 Nesta seção eu organizo os conteúdos por ordem alfabética. Se preferir uma sequência de estudos acompanhe o tutorial a seguir.
