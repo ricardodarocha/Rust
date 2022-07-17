@@ -326,6 +326,8 @@ println!("Olá {}!", name)
 
 ## Ler arquivos 
 
+Veja esse hack [Carregar o conteúdo de um arquivo para uma string](#carregar_arquivo_em_string)
+
 Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
 
 Há duas formas principais de ler estes arquivos, que eu divido em 
@@ -340,6 +342,19 @@ Veja este exemplo básico
     let mut conteudo = String::new();
     file.read_to_string(&mut conteudo)?;
     assert_eq!(conteudo, "Hello, world!");
+```
+
+### Carregar arquivo em string
+
+```Rust
+use std::fs;
+use std::path::Path;
+
+let conteudo = fs::read_to_string(Path::new("./Sample.txt") );
+match conteudo {
+  some(text) => print!(text),
+  None => print!("Não encontrado")
+}
 ```
 
 ## Salvar um arquivo localmente
