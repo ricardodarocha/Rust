@@ -84,7 +84,7 @@ match x {
 
 Actix  
 [Ambiente, configurando](https://www.rust-lang.org/pt-BR/tools/install)  
-Ambiente, variáveis de  (ver env)
+Ambiente, variáveis de (ver env)  
 Argumentos, Args  
 [Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
 [Arquivos](#ler-arquivos)  
