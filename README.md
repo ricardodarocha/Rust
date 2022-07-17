@@ -102,6 +102,7 @@ Atributos (ver Models)
 [Banco de Dados](#trabalhando-com-bancos-de-dados)  
 BI  
 Binários, Bin  
+Box  
 
 # C
 
@@ -118,10 +119,11 @@ CSV
 
 Dashboard  
 DDD  
-Debug  
+[Debug](#debug)  
 [Default](https://github.com/ricardodarocha/Rust/blob/main/general/default.md)  
 [Display](https://github.com/ricardodarocha/Rust/blob/main/general/display.md)  
 [Design Patterns](https://github.com/ricardodarocha/Rust/tree/main/DesignPattern)  
+[Derive](#derive)  
 Desktop  
 Documentação, Doc    
 DOD  
@@ -153,7 +155,9 @@ Hello world
 HTML  
 
 # I
-Imagens  
+Imagens 
+[Impl Struct](#impl-struct)  
+[Impl Trait](#impl-trait)  
 [Ini, \*.ini](#ler-um-arquivo-ini)  
 IP  
 Internet  
@@ -190,15 +194,15 @@ Return
 # S
 
 SQL  
-Struct  
-Strings  
+[Struct](#struct)  
+[Strings](#string)  
 
 # T
 
 Tauri  
 Testes
 Texto  
-Trait  
+Trait ver [Impl Trait](#impl-trait)  
 Tipos  
 Tuplas  
 
@@ -619,6 +623,162 @@ It's a continuation of example 3_api
 [Acesse o Link](https://github.com/ricardodarocha/rust-chat-old)
 
 ---
+
+## Box  
+
+Crie referências encadeadas com Box  
+Veja este exemplo de árvore genealógica  
+```Rust
+#[derive(Debug)]
+struct MinhaArvore {
+    nome: String,
+    ramos: Option<Box<MinhaArvore>>,
+}
+
+fn main() {
+    let galileu = MinhaArvore {
+        nome: "Galileu",
+        ramos: Some(Box::new(MinhaArvore{
+            nome: "Newton",
+            ramos: Some(Box::new(MinhaArvore){
+                nome: "Einstein",
+                ramos: Some(Box::new(MinhaArvore))
+                })
+            })
+        )
+    }
+}
+
+println!("{#?}", galileu);
+```
+
+## Debug  
+
+Debug pode se referir a 
+[target de compilação]()   
+[derive annotation]()  
+[processo de depuração]()  
+
+### target debug
+
+Há dois tipos de binários *DEBUG* e *RELEASE*
+Ao compilar um projeto com `cargo build` é criado um binário na pasta `\target\debug\`. Este binário normalmente é um pouco maior do que uma versão release  
+A versão release é utilizada para distribuição do seu aplicativo, e a versão debug é utilizada para testes  
+A versão debug normalmente contém mais informações importantes para o desenvolvedor testar e procurar por BUGS    
+Para compilar uma versão debug basta rodar o comando `cargo run` e a versão relase `cargo run --release`
+
+```shell
+cargo run 
+// \target\debug\projeto.exe
+
+cargo run --release
+// \target\release\projeto.exe
+```
+
+## derive
+
+Esta é mais uma macro do RUST que nos auxilia a gerar instruções sem a necessidade de escrever código  Rust irá gerar automaticamente várias linhas de código quando utilizarmos derive  
+Há algumas anotações específicas com objetivos específicos  
+Veja na tabela a seguir alguns exemplos de derive em estruturas de dados [Struct](#struct)  
+
+||||
+|-|-|-|
+|`#[derive(Debug)]`|permite imprimir informações em runtime|`println!("{#?}", objeto)`|
+|`#[derive(Default)]`|permite atribuir valores default ao criar uma nova instância|`Objeto::defaul()`|
+|`#[derive(Default)]`|permite representar o objeto em string|`Objeto::to_str()`|
+|`#[derive(Serialize)]`|permite converter em Json|``|
+|`#[derive(Deserialize)]`|permite ler a partir de um Json|``|
+|`#[derive(Clone)]`|permite criar cópias do objeto|`obj2 = obj1.clone()`|
+
+```
+
+```
+
+# Struct
+
+Estruturas de dados representam objetos, embora não seja exatamente uma linguagem POO é possível criar objetos com Rust utilizando Structs. A diferença é que RUST não possui suporte a herança. No entanto vários problemas de herança podem ser resolvidos utilizando Composition  
+
+```Rust
+struct MeuObjeto {
+  id: Uuid,
+  nome: String,
+  quantidade: i32, //-♾ ..2^32
+  celulas: u16, //0..255
+  ativo: bool,
+  arquivo: Path
+}
+```
+Observe que Rust possui vários tipos primitivos mas também possui tipos enriquecidos, com Path, Filename, Date etc
+Para isso é necessário importar crates externas
+
+```Rust
+use std::path::Path;
+use uuid::Uuid;
+```
+
+## Advanced Struct - Estruturas avançadas
+
+Estruturas normalmente representam dados, no entanto é possível adicionar métodos de comportamentos aos objetos utilizando impl
+
+## Impl Struct
+
+Implementar comportamento em estruturas
+
+```Rust
+struct MeuObjeto {
+  id: Uuid,
+  nome: String,}
+  
+  impl MeuObjeto {
+  
+  fn New() -> &Self {
+    MeuObjeto {
+      id: Uuid::new_v4(),
+      nome: "Anônimo".to_own(),
+    }
+  }
+  }
+``` 
+
+## Impl Trait
+
+Implementando contratos em estruturas
+
+Além de implementar métodos é possível implementar contratos   
+Contratos são similares à interfaces. Com a diferença de que interfaces podem ou não implementar heranças e possuem características inerentes à POO, traits possuem particularidades que deixam-no mais poderosos.
+
+por exemplo vamos implementar um contrato Admin na nossa estrutura
+
+```Rust
+pub trait Admin {
+   fn login(&self) -> bool {
+     false
+   };
+}
+```
+Veja que tratis possuem uma implementação padrão, ou seja não exige abstração em cenários onde não é necessário
+
+```Rust
+impl Admin for MeuObjeto {
+  fn login(&self) -> bool {
+     return nome == "Admin"
+   };
+}
+
+```
+
+Neste exemplo o objeto que possuir o nome "Admin" irá retornar Login=True
+
+```Rust
+
+let user1 = MeuObjeto::new();
+let user2 = MeuObjeto::new(); 
+let user2.nome = "Admin".to_own();
+
+print!("user 1 can login {}", user1.login()) //false
+print!("user 2 can login {}", user2.login()) //true
+}
+```
 
 # Sumary by Subject
 
