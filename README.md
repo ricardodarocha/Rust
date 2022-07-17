@@ -111,7 +111,7 @@ Box
 [Chat](https://github.com/ricardodarocha/rust-chat)   
 CLAP  
 [Configurações do usuário](#ler-um-arquivo-de-configurações-env-ini-xml-json)  
-CLI  
+[CLI](#criando-uma-aplicação-simples-de-linha-de-comando-cli)  
 Cores  
 CSV  
  
