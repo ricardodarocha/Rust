@@ -87,7 +87,7 @@ Actix
 Ambiente, variáveis de  (ver env)
 Argumentos, Args  
 [Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
-Arquivos  
+[Arquivos](#ler-arquivos)  
 [Arquitetura](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)  
 Aplicativos de Linha de Comando (ver CLI)  
 Aplicativos Desktop (ver Desktop)
@@ -326,7 +326,7 @@ println!("Olá {}!", name)
 
 ## Ler arquivos 
 
-Veja esse hack [Carregar o conteúdo de um arquivo para uma string](#carregar_arquivo_em_string)
+Veja esse hack [Carregar o conteúdo de um arquivo para uma string](#carregar-arquivo-em-string)
 
 Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
 
