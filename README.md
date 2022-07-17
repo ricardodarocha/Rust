@@ -330,9 +330,9 @@ println!("Olá {}!", name)
 
 ## Ler arquivos 
 
-Veja esse hack [Carregar o conteúdo de um arquivo para uma string](#carregar-arquivo-em-string)
+> 🧡 _Veja esse hack_ [Carregar o conteúdo de um arquivo para uma string](#carregar-arquivo-em-string)
 
-Da mesma forma é necessário ler os dados gravados, ou então em alguns casos você vai querer ler arquivos que foram gerados por outros dispositivos e importá-los no seu sistema.
+Da mesma forma que criamos arquivos, é necessário ler os dados gravados.
 
 Há duas formas principais de ler estes arquivos, que eu divido em 
 
