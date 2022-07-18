@@ -518,6 +518,14 @@ Também estou desenvolvendo este material sobre o Estado da Arte das Interfaces 
 
 Se você tem interesse por games dê uma olhada nestes [Experimentos com Rust - Games]()
 
+# Parte III
+
+## Tipos
+
+[Tipos primitivos](https://doc.rust-lang.org/rust-by-example/primitives.html)  
+[Tipos customizados](https://doc.rust-lang.org/rust-by-example/custom_types.html)  
+[Strings](https://doc.rust-lang.org/rust-by-example/conversion/string.html)  
+
 # Coletâneas
 
 Nesta série de coletâneas eu vou exibir exemplos mais práticos possíveis. Por conta disso, eu vou poupar entrar em detalhes.
