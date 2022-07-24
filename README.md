@@ -176,6 +176,7 @@ Log
 # M
 
 Macros  
+Matrizes  
 [Models](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md), [Modelos](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md)  
 Módulos  
 
@@ -210,6 +211,7 @@ Tuplas
 
 Variáveis
 Variáveis de ambiente (ver env)  
+Vetores  
 Vue.js  
 
 # X  
