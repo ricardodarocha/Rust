@@ -609,6 +609,53 @@ serde = { version = "1.0.104", features = ["derive"] }
 serde_json = "1.0.48"
 ```
 
+## Gerando uma senha
+
+```Rust
+//Create random passwords from a set of alphanumeric characters
+//rand-badge cat-os-badge
+
+//Randomly generates a string of given length ASCII characters in the range A-Z, a-z, 0-9, with Alphanumeric sample.
+
+
+use rand::{thread_rng, Rng};
+use rand::distributions::Alphanumeric;
+
+fn main() {
+    let rand_string: String = thread_rng()
+        .sample_iter(&Alphanumeric)
+        .take(30)
+        .map(char::from)
+        .collect();
+
+    println!("{}", rand_string);
+}
+//Create random passwords from a set of user-defined characters
+//rand-badge cat-os-badge
+
+//Randomly generates a string of given length ASCII characters with custom user-defined bytestring, with gen_range.
+
+
+fn main() {
+    use rand::Rng;
+    const CHARSET: &[u8] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZ\
+                            abcdefghijklmnopqrstuvwxyz\
+                            0123456789)(*&^%$#@!~";
+    const PASSWORD_LEN: usize = 30;
+    let mut rng = rand::thread_rng();
+
+    let password: String = (0..PASSWORD_LEN)
+        .map(|_| {
+            let idx = rng.gen_range(0..CHARSET.len());
+            CHARSET[idx] as char
+        })
+        .collect();
+
+    println!("{:?}", password);
+}
+```
+[fonte](https://rust-lang-nursery.github.io/rust-cookbook/algorithms/randomness.html)   
+
 ## Trabalhando com Bancos de dados
 
 É recomendado utilizar a biblioteca [Diesel](https://diesel.rs/guides/getting-started) ou [sqlx]()  
@@ -920,6 +967,6 @@ Nesta seção eu reúno meus estudos mais recentes sobre Arquiteturas com Rust, 
 # Links
 
 **github notebook**(Best Rust curated)[https://github.com/brson/rust-anthology/blob/master/master-list.md]
-**Video** (Error Handling)[https://www.youtube.com/watch?v=mhw-x5Q_-z0&t=195s]
-
+**video** (Error Handling)[https://www.youtube.com/watch?v=mhw-x5Q_-z0&t=195s]  
+(**rust cookbook**)[https://rust-lang-nursery.github.io/rust-cookbook]
 https://lib.rs/crates/cursive
