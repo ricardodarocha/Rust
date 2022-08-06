@@ -177,8 +177,9 @@ Log
 
 Macros  
 Matrizes  
-[Models](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md), [Modelos](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md)  
-[Módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)  
+[Models](https://github.com/ricardodarocha/Rust/blob/main/Models.md),  
+[Modelos](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md)  
+[Módulos](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)  
 
 # P
 
@@ -958,7 +959,7 @@ a regra de negócios principal fica no main.rs, onde você expõe o servidor e s
 As rotas você deve deixar no arquivo routes.rs.
 Eu recomendo criar as rotas em um arquivo separado porque um projeto de API pode se tornar grande com o tempo, e mesmo para projetos pequenos, você criar uma melhora separação das responsabilidades.
 
-Veja [como criar módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)
+Veja [como criar módulos](https://github.com/ricardodarocha/Rust/tree/main/arquitetura)
 
 # Arquiteturas com RUST
 
