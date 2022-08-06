@@ -178,7 +178,7 @@ Log
 Macros  
 Matrizes  
 [Models](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md), [Modelos](https://github.com/ricardodarocha/Rust/blob/main/Modelos.md)  
-Módulos  
+[Módulos](https://github.com/ricardodarocha/Rust/edit/main/README.md#Modules)  
 
 # P
 
