@@ -1,3 +1,11 @@
+# RUST Api Actix level 2
+
+## Intro
+
+🐶 Este é um exemplo de um nível básico, mas exige um pouco mais de experiência
+
+Neste exemplo eu mostro algumas features adicionais como uuid, chrono
+
 ```shell
 cargo add api_name & cd api_name
 cargo add actix-web
