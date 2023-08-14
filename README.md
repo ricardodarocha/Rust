@@ -5,8 +5,8 @@ Um repositório para estudar Rust do começo
 🚀 **Este repositório está crescendo rápido**  
 
 - [Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)  
-- [Hello World](#primeiro-exercício)  
-- [Api](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)  
+- [Api Actix Básica](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)
+- [Api Actix Nível 2](https://github.com/ricardodarocha/Rust/blob/main/acitx/Reasdme.md)
 - [Postgres](https://github.com/ricardodarocha/sqlxpg)  
 ---
 
