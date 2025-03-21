@@ -1,6 +1,6 @@
 # Introdução aos Algoritmos com Rust
 
-*instrutor Ricardo da Rocha Vitor ricardodarocha@outlook.com 
+*instrutor Ricardo da Rocha Vitor ricardodarocha@outlook.com  
 Atividade Complementar - Curso de Rust
 UNIFAGOC - https://unifagoc.edu.br/
 
