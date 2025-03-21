@@ -118,8 +118,8 @@ Veja
     match idade {
         0..=17 => println!("Menor de idade"),
         18..=39 => println!("Idade Militar"),
-        65..=i32::MAX as i32 => println!("Aposentado"),  
-        _ => println!("Adulto não aposentado"),
+        65..=u32::MAX as u32 => println!("Aposentado"),  
+        _ => println!("idade entre 40 e 65, não aposentado"),
     }
 ```
 
