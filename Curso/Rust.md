@@ -11,7 +11,7 @@ Adaptado por Ricardo da Rocha Vitor em 2025-I
 
 Rust é uma linguagem de programação moderna, focada em segurança e desempenho. Neste material, aprenderemos os conceitos básicos de lógica de programação utilizando Rust, incluindo blocos principais de código, tomadas de decisão, loops, tipos primitivos e fluxos de controle, como atividades complementares das disciplinas de "Raciocínio Lógico" e "Algoritmos e Estruturas de Dados".
 
-Para ver um exemplo de programa em Rust rodando no browser acesse o link do [Rust PlayGround](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=2614eeb3df6e95cec13c6600a317a251)
+Para ver um exemplo de programa em Rust rodando no browser acesse o notebook do [Rust PlayGround](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=2614eeb3df6e95cec13c6600a317a251)
 ![image](https://github.com/user-attachments/assets/2f344a7d-c802-4e41-bfce-68f153bff8b2)
 
 ## 1. Estrutura Básica de um Programa em Rust
