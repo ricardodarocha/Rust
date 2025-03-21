@@ -26,6 +26,9 @@ fn main() {
 
 A função `main` é o ponto de entrada do programa. A macro `println!` imprime uma mensagem na tela.
 
+> Neste curso eu preparei duas macros que permitirão usar `leia!()` e `imprima!()` em vez de `read` e `println!`, dois comandos nativos essenciais em Rust. O objetivo é aproximá-los da didática apresentada pelos autores Manzano e Dantas
+> O uso de `read` em Rust é um conteúdo mais avançado, porém o uso de `println!` é bem comum e é importante o seu conhecimento.
+
 ## 2. Tipos Primitivos
 
 Rust possui diversos tipos de dados primitivos:
