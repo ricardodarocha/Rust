@@ -78,7 +78,7 @@ Note que, ao resolver a primeira condição, o sistema não irá percorrer as de
 🚸 Blocos de decisão com mais de duas condições se tornam complexos, sendo a fonte de muitos bugs em programação de sistemas. Um exemplo ocorre ao deixar certas  condições sem tratamento. 
 
 	O código abaixo gera alguns bugs por não considerar 
-	corretamente valores entre 40 e 60
+	corretamente valores entre 40 e 65
 
 ```rust    
 	// 💣  código contém bug
