@@ -87,13 +87,34 @@ Note que, ao resolver a primeira condição, o sistema não irá percorrer as de
 	    println!("Menor de idade");
     } else if idade < 40 {
         println!("Idade Militar");
-    } else if idade > 65  {
+    } else if idade >= 65  {
         println!("Aponsentado");
     }
 }
 ```
 
 O grande problema de códigos deste tipo é que aparentemente não há nada de errado com ele. Como possui uma sintaxe correta, o compilador executa normalmente. 
+Analise o diagrama de fluxo com cuidado
+```mermaid
+flowchart TD
+L0@{ shape: circle, label: "inicio"}
+L0 --> IDADE; IDADE@{ shape: notch-rect, label: "idade"}
+IDADE --> SE; 
+SE{".        .        ." }
+SE-- Idade < 18 -->MENOR
+SE-- Idade < 40 -->IDADEMILITAR
+SE-- Idade < 65 -->BUG
+SE-- Idade >= 65 -->APOSENTADO
+MENOR --> SAIDA
+IDADEMILITAR --> SAIDA
+APOSENTADO --> SAIDA
+MENOR@{ shape: doc, label: "Menor de idade"}
+IDADEMILITAR@{ shape: doc, label: "Idade militar"}
+APOSENTADO@{ shape: doc, label: "Aposentado"}
+style BUG stroke:#f66,stroke-width:2px,stroke-dasharray: 3 5
+SAIDA@{ shape: circle, label: "fim"}
+
+```
 
 Em alguns casos podemos usar `match` para lidar com múltiplas possibilidades, evitando o problema de condições não especificadas:
 
