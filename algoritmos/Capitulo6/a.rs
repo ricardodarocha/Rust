@@ -23,10 +23,7 @@ fn main() {
     }
 
   //avançado
-  //Usando for com intervalo implícito (com iter() e map):
-  fn main() {
-    // Usando for com iter() e map
-    (15..=200).for_each(|i| println!("{}", i * i));
-}
+  //Usando for com intervalo implícito (com iter() e map):  
+  (15..=200).for_each(|i| println!("{}", i * i));
   
 }
