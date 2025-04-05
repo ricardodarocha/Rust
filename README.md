@@ -8,7 +8,7 @@ Um repositório para estudar Rust do começo
 - [Postgres](https://github.com/ricardodarocha/sqlxpg)  
 ---
 
-Para Curso Unifagoc - Introdução ao Rust (2025) acesse o repositório [Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
+Para Curso Unifagoc - Introdução aos algoritmos com Rust (2025) acesse o repositório [🦀 Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
 
 Eu tenho um interesse especial por **Rust!** Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
 Com o passar do tempo, eu fui percebendo que isso poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
