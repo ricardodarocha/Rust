@@ -65,7 +65,7 @@ let nascimento = 1873;
 
 ### 2.b) atribuição de valores
 
-$idade \leftarrow 18$
+$idade \leftarrow 18$  
 `Manzano`
 
 ```rust
