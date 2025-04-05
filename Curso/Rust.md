@@ -78,11 +78,11 @@ let idade = 18;
 > idade = 1;
 > idade += 10; //incrementa
 > idade -= 1; //decremento
-> asseteq!(idade == 10); //✅
+> asserteq!(idade == 10); //✅
 > idade *= 3; //multiplicando por ele mesmo
-> asseteq!(idade == 30); //✅
+> asserteq!(idade == 30); //✅
 > idade /= 3; //dividindo ele mesmo por 3
-> asseteq!(idade == 15); //✅
+> asserteq!(idade == 15); //✅
 > ```
 
 ### 2.c) comparação lógica
