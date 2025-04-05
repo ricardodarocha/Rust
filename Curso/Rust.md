@@ -47,7 +47,16 @@ let booleano: bool = true;
 let caractere: char = 'A';
 ```
 
-### 2.a) declaração de variável
+---
+
+> Algumas linguagens possuem tipos com nomes diferentes  
+> Para renomear os tipos usando os nomes que você já tem familiaridade use o comando `type`;  
+> ```rust
+> type int = i32;
+> type logico = bool;
+> ```
+
+### 2.a) declaração de variáveis  
 
 Declare variáveis com o comando **let**  
 ```rust
@@ -94,15 +103,6 @@ if x == 42 {
 
 }
 ```
-
----
-
-> Algumas linguagens possuem tipos com nomes diferentes  
-> Para renomear os tipos usando os nomes que você já tem familiaridade use o comando `type`;  
-> ```rust
-> type int = i32;
-> type logico = bool;
-> ```
 
 ## 3. Blocos de Decisão (Condicionais)
 
