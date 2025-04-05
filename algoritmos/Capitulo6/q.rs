@@ -19,18 +19,18 @@ type Texto = String;
 fn main() {
 
   loop {
-    let mut nome: String;
-    let mut comp: Inteiro;
-    let mut larg: Inteiro;
+    let nome: String;
+    let comp: Inteiro;
+    let larg: Inteiro;
     leia!(nome: String);
     leia!(comp: Inteiro);
     leia!(larg: Inteiro);
 
-    println!("área_{nome} = {area}m²", area = comp * larg);
+    println!("área_{nome} = {area} m²", area = comp * larg);
     // leia!(input: String);
     // if input == "NÃO" { break }
 
-    println!("Para interromper, pressione <enter> <enter>");
+    println!("\nPróximo\nPara interromper, pressione <enter> <enter>");
   }
   
 }
