@@ -47,10 +47,12 @@ let booleano: bool = true;
 let caractere: char = 'A';
 ```
 
-> Algumas linguagens possui tipos com nomes diferentes
-> Para renomear os tipos usando os nomes que você já tem familiaridade use o comando type;
+> Algumas linguagens possui tipos com nomes diferentes  
+> Para renomear os tipos usando os nomes que você já tem familiaridade use o comando `type`;  
+> ```rust
 > type int = i32;
 > type logico = bool;
+> ```
 
 ## 3. Blocos de Decisão (Condicionais)
 
@@ -86,8 +88,8 @@ Note que, ao resolver a primeira condição, o sistema não irá percorrer as de
 	corretamente valores entre 40 e 65
 
 ```rust    
-	// 💣  código contém bug
-	let idade = 42;
+    // 💣  código contém bug
+    let idade = 42;
     if idade < 18 {
 	    println!("Menor de idade");
     } else if idade < 40 {
