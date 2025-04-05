@@ -5,7 +5,7 @@ Atividade Complementar - Curso de Rust
 UNIFAGOC - https://unifagoc.edu.br/
 
 Este curso é baseado na página [Stanford's course on programming language theory and design](https://stanford-cs242.github.io/f19/labs/rust.html)  
-Adaptado por Ricardo da Rocha Vitor em 2025-I
+Adaptado por Ricardo da Rocha Vitor em 2025-I, com base nos exercícios de Manzano, Lógica para desenvolvimento de programação de computadores.
 
 ## Introdução
 
