@@ -119,6 +119,65 @@ fn main() {
 }
 ```
 
+### 3. a) Se
+
+```rust
+if idade > 18 {
+
+}
+```
+
+### 3. b) Múltiplos Se em sequência
+
+![image](https://github.com/user-attachments/assets/edc97107-e5a4-4a40-adae-6701af8eb671)
+
+```rust
+if numero > m {
+	m = numero;
+}
+if numero < n {
+	n = numero;
+}
+```
+
+### 3. c) Se Senão
+
+```rust
+if numero % 2 == 0 {
+  print!("É par")
+} else {
+  print!("É ímpar");
+}
+```
+
+### 3. c) Se - Senão Se
+
+```rust
+if sinal == "vermelho" {
+  print!("🔴")
+} else if sinal == "amarelo"{
+  print!("🟠");
+} else {
+  print!("🟢");
+}
+```
+
+### 3. d) Se aninhados
+
+```rust
+if numero < 60 {
+  if numero > 0 {
+    if numero > 41 {
+      if numero < 43{
+        print!("O número é 42");
+      }
+    }  
+  }
+}
+```
+
+---
+
 Blocos de decisão também podem ter várias condições
 Note que, ao resolver a primeira condição, o sistema não irá percorrer as demais
 ```rust
