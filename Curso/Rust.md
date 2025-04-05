@@ -96,7 +96,14 @@ let idade = 18;
 
 ### 2.c) comparação lógica
 
-`== igualdade >= maior ou igual <= menor ou igual > maior < menor != diferente` 
+```
+== igualdade 
+>= maior ou igual
+<= menor ou igual
+> maior 
+< menor 
+!= diferente
+``` 
 
 ```rust
 if x == 42 {
