@@ -4,7 +4,7 @@ macro_rules! leia {
         {
             use std::io::{self, Write};
             let mut input = String::new();
-            // println!("o sistema está aguardando digitar um valor para {}: ", stringify!($var));
+            println!("informe {}: ", stringify!($var));
             io::stdout().flush().unwrap();
             io::stdin().read_line(&mut input).expect("Falha ao ler entrada");
             input = input.trim().to_string();
@@ -26,11 +26,11 @@ fn main() {
     leia!(comp: Inteiro);
     leia!(larg: Inteiro);
 
-    println!("{nome}, {area}", area = comp * larg);
+    println!("área_{nome} = {area}m²", area = comp * larg);
     // leia!(input: String);
     // if input == "NÃO" { break }
 
-    println!("Para interromper, pressione enter");
+    println!("Para interromper, pressione <enter> <enter>");
   }
   
 }
