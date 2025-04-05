@@ -4,7 +4,7 @@
 Atividade Complementar - Curso de Rust
 UNIFAGOC - https://unifagoc.edu.br/
 
-Este curso é baseado na página [Stanford's course on programming language theory and design](https://stanford-cs242.github.io/f19/labs/rust.html)  
+Este curso é baseado na página _Stanford's course on programming language theory and design_ [^1]  
 Adaptado por Ricardo da Rocha Vitor em 2025-I, com base nos exercícios de Manzano, Lógica para desenvolvimento de programação de computadores.
 
 ## Introdução
@@ -75,7 +75,7 @@ let nascimento = 1873;
 ### 2.b) atribuição de valores
 
 $idade \leftarrow 18$  
-`Simbologia adotada por Manzano`
+Simbologia adotada por Manzano [^2] 
 
 ```rust
 let idade = 18;
@@ -472,3 +472,13 @@ fn fib(n: i32) -> i32 {
 ## Conclusão
 
 Rust é uma linguagem poderosa para a lógica de programação. Compreender a estrutura do código, decisões condicionais, loops e fluxo de controle é essencial para desenvolver programas eficientes. Aprender Rust desde cedo pode ser um divisor de águas na carreira do programador, pois a forma estruturada e o compilador bastante exigente poderá auxiliar na construção de programas mais sólidos e hábitos mais saudáveis como tipagem estática, ciclo de vida de variáveis, imutabilidade etc.
+
+# Referências
+
+[^1]: [Stanford's course on programming language theory and design](https://stanford-cs242.github.io/f19/labs/rust.html)
+
+[^2]: [MANZANO, Augusto. Algoritmos. Lógica Para Desenvolvimento de Programação](https://www.amazon.com.br/Algoritmos-L%C3%B3gica-Para-Desenvolvimento-Programa%C3%A7%C3%A3o/dp/8536502215)
+
+[MANZANO, Augusto. **Primeiros passos com a linguagem Rust**](https://www.amazon.com.br/Primeiros-passos-com-linguagem-Rust-ebook/dp/B07DV3CF14)
+
+[A linguagem de programação Rust](https://rust-br.github.io/rust-book-pt-br/title-page.html)
