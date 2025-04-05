@@ -47,6 +47,11 @@ let booleano: bool = true;
 let caractere: char = 'A';
 ```
 
+> Algumas linguagens possui tipos com nomes diferentes
+> Para renomear os tipos usando os nomes que você já tem familiaridade use o comando type;
+> type int = i32;
+> type logico = bool;
+
 ## 3. Blocos de Decisão (Condicionais)
 
 Usamos `if` para tomar decisões:
