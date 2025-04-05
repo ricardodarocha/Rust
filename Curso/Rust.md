@@ -47,7 +47,44 @@ let booleano: bool = true;
 let caractere: char = 'A';
 ```
 
-> Algumas linguagens possui tipos com nomes diferentes  
+### 2.a) declaração de variável
+
+Declare variáveis com o comando **let**  
+```rust
+let nome = "Santos Dummont";
+let nascimento = 1873;
+```
+
+> 🔥🔥 **Variáveis mutáveis**  
+> Se pretende alterar o valor de uma variável ao longo do processo, lembre de adicionar o prefixo **mut** (mutável)
+> ```rust
+> let mut idade = 18;  
+> idade += 1;
+> ```
+
+
+### 2.b) atribuição de valores
+
+$idade \leftarrow 18$
+`Manzano`
+
+```rust
+let idade = 18;
+```
+
+### 2.c) comparação lógica
+
+`== igualdade >= maior ou igual <= menor ou igual > maior < menor != diferente` 
+
+```rust
+if x == 42 {
+
+}
+```
+
+---
+
+> Algumas linguagens possuem tipos com nomes diferentes  
 > Para renomear os tipos usando os nomes que você já tem familiaridade use o comando `type`;  
 > ```rust
 > type int = i32;
