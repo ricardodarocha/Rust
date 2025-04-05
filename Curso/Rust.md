@@ -66,11 +66,24 @@ let nascimento = 1873;
 ### 2.b) atribuição de valores
 
 $idade \leftarrow 18$  
-`Manzano`
+`Simbologia adotada por Manzano`
 
 ```rust
 let idade = 18;
 ```
+
+> **Outras formas de atribuição**
+> ```rust
+> let mut idade: i32; //a variável poderá ser modificada
+> idade = 1;
+> idade += 10; //incrementa
+> idade -= 1; //decremento
+> asseteq!(idade == 10); //✅
+> idade *= 3; //multiplicando por ele mesmo
+> asseteq!(idade == 30); //✅
+> idade /= 3; //dividindo ele mesmo por 3
+> asseteq!(idade == 15); //✅
+> ```
 
 ### 2.c) comparação lógica
 
