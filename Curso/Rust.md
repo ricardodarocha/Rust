@@ -374,7 +374,7 @@ fn main() {
   let b = 248;
   let rgb = (r, g, b);
 
-  // Tuplas
+  // uma tupla representando a cor índigo em RGB 🟣
   let indigo  = (87, 13, 248);
   
   // Desestruturação
@@ -392,7 +392,7 @@ fn main() {
 
   // Enumerados
   enum PontosCardeais {
-		Note,
+		Norte,
 		Sul,
 		Leste, 
 		Oeste
