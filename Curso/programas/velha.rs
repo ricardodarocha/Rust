@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-//▶ https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=dd40c034d23fa228094f0ddc1367d58b
+//▶ https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=a2f1d3bbec29050415dadd6801d8e395
 
 use std::ops::{Index, IndexMut};
 
