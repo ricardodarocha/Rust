@@ -1,3 +1,5 @@
+/// [▶ execute este programa](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=02133b452b2d30255b5923ad4d6ea65e)
+
 #![allow(dead_code)]
 
 const L: usize = 17;
