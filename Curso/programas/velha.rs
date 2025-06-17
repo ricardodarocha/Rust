@@ -1,5 +1,5 @@
 #![allow(dead_code)]
-
+//Esta implementação de jogo da velha utiliza conceitos avançados da linguagem Rust
 //▶ https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=a2f1d3bbec29050415dadd6801d8e395
 
 use std::ops::{Index, IndexMut};
