@@ -2,7 +2,7 @@
 /// Um livro de caixa é uma reunião de lançamentos de entradas (recebimentos) 
 /// e saídas (pagamentos), e possui operações de Lancamento, Soma das entradas,
 /// Soma das saídas e Apuração do saldo
-/// ▶ execute este programa https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=b80ad83ad5560cb4d0c8df0deadd0f1e
+/// [▶ execute este programa](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=b80ad83ad5560cb4d0c8df0deadd0f1e)
 struct Caixa {
     reg: Vec<Lancamento>,
 }
