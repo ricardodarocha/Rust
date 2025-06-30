@@ -1,6 +1,6 @@
 # Rust
 
-Um repositório para estudar Rust do começo  
+Este é um repositório dedicado ao estudo da linguagem Rust   
 
 - [Configurar um Ambiente Rust](https://www.rust-lang.org/pt-BR/tools/install)  
 - [Api Actix Básica](https://github.com/ricardodarocha/Rust/blob/main/3_api/Readme.md)
@@ -8,14 +8,9 @@ Um repositório para estudar Rust do começo
 - [Postgres](https://github.com/ricardodarocha/sqlxpg)  
 ---
 
-Para Curso Unifagoc - Introdução aos algoritmos com Rust (2025) acesse o repositório [🦀 Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
+# Links
 
-Eu tenho um interesse especial por **Rust!** Este material começou a ser criado para atender ao meu objetivo pessoal de aprender Rust.    
-Com o passar do tempo, eu fui percebendo que isso poderia ajudar outras pessoas. Desde então, eu tenho me esforçado para deixar tudo organizado.
-
-Eu criei o formulário abaixo para examinar os interesses da comunidade.  
-Por favor, responda a algumas perguntas bem rapidinho.
-https://forms.gle/g5Y6V3g5ag75qcPg8  
+Curso Unifagoc - Introdução aos algoritmos com Rust (2025) acesse o repositório [🦀 Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
 
 # Introdução
 
