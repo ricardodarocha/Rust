@@ -10,7 +10,8 @@ Este é um repositório dedicado ao estudo da linguagem Rust
 
 # Links
 
-Curso Unifagoc - Introdução aos algoritmos com Rust (2025) acesse o repositório [🦀 Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
+📗 Curso Unifagoc - Introdução aos algoritmos com Rust (2025) acesse o repositório [🦀 Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)
+🍏 Jogo da Cobrinha [https://github.com/ricardodarocha/cobrinha-basico-rs](https://github.com/ricardodarocha/cobrinha-basico-rs)
 
 # Introdução
 
