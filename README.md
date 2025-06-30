@@ -66,7 +66,35 @@ match x {
 }
 ```
 
-[match](https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs)  
+# 🦀 Option
+
+Option é o enumerado que representa Nulos em Rust. Rust não possui suporte para tipos nulos. Utilize enumerados para representar None ou Some(value)
+
+```Rust
+let credencial: Option<String> = json.get<String>("CLIENT_ID"); //algum json pode ou não ter a chave CLIENT_ID
+match credencial {
+  Some(value) => println!("Cliente = {value}"),
+  None => println!("Acesso negado"),
+}
+```
+
+# 🦀 Result
+
+Result é o segundo enumerado mais importante em Rust. Em situações onde podem ocorrer erros, é importante coletar estes erros para tratamento futuro ou para propagar o erro para a próxima chamada.  
+A definição de um Enumerado Result é Result<T, E>  
+Result é um enumerado genérico que pode ter duas variações: "OK" e "Error" onde Ok retorna um T e Error retorna um E
+
+```Rust
+let str_pi: Result<f32, Error> = "3.14".to_string(); //Algum input string do usuário
+let pi = str_pi.parse<f32>;
+match pi {
+  Ok(value) => println!("Pi = {value}"),
+  Error(err) => println!("Erro ao converter {err}"),
+}
+```
+
+mais informações sobre o [padrão match](https://github.com/ricardodarocha/Rust/new/main/general/correspondencia.rs)  
+curso intensivo  [Rust/Curso](https://github.com/ricardodarocha/Rust/blob/main/Curso/Rust.md)  
 
 ### módulos de estudo
 
@@ -91,6 +119,7 @@ Aplicativos Web (ver Web)
 Arduino  
 ASM  
 Atributos (ver Models)  
+Axum
 
 
 # B
