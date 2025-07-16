@@ -89,7 +89,7 @@ let idade = 18;
 > asserteq!(idade == 10); //✅
 > idade *= 3; //multiplicando por ele mesmo
 > asserteq!(idade == 30); //✅
-> idade /= 3; //dividindo ele mesmo por 3
+> idade /= 2; //dividindo ele mesmo por 2
 > asserteq!(idade == 15); //✅
 > ```
 
