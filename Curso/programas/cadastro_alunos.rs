@@ -1,3 +1,4 @@
+//https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=227e401a2213caede58c53df5776b508
 pub mod portugol {
     #[macro_export]
     macro_rules! leia {
