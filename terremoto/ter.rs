@@ -1,4 +1,4 @@
-//https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=bea6a0c99127539b00256acfbda45305
+https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=f7b4da2a96d087d38fee8441bf550f56
 pub mod portugol {
     #[macro_export]
     macro_rules! leia {
@@ -31,7 +31,8 @@ fn magnitude_from_energy(e: f64) -> f64 {
 
 fn energy_from_magnitude(m: f64) -> f64 {
     const E0: f64 = 7e-3;
-    E0 * 10f64.powf(1.5 * m)
+    let mag = (m * 100.0).floor() / 100.0;
+    E0 * 10f64.powf(1.5 * mag)
 }
 
 fn exibir_alerta(m: f64) {
@@ -47,7 +48,7 @@ fn exibir_alerta(m: f64) {
 
     for (i, &limite) in limites.iter().enumerate() {
         if m >= limite {
-            println!("Magnitude {:.3} → {}", m, mensagens[i]);
+            println!("{}\n    Magnitude {:.3}", mensagens[i], m, );
             break;
         }
     }
@@ -71,18 +72,18 @@ fn main() {
         if opcao == 1 {
             let a: f64;
             let delta_t: f64;
-            leia!(a: f64, "Informe a Amplitude A (mm)");
-            leia!(delta_t: f64, "Informe ΔT (s)");
+            leia!(a: f64, "Informe a Amplitude A (mm)\n> ");
+            leia!(delta_t: f64, "Informe ΔT (s)\n> ");
 
             let m = magnitude_from_amplitude(a, delta_t);
             exibir_alerta(m);
 
             let e = energy_from_magnitude(m);
-            println!("Energia despendida (E) = {:.2E}", e);
+            println!("    Energia despendida (E) = {:.5E} kWh\n\nPROXIMA LEITURA", e);
         } else if opcao == 2 {
             let e: f64;
             println!("");
-            leia!(e: f64, "Informe a Energia despendida(E)");
+            leia!(e: f64, "Informe a Energia despendida(E)\n> ");
             
             let m = magnitude_from_energy(e);
             println!("Magnitude (E) = {:.2} kWh", m);
