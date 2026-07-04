@@ -1,5 +1,8 @@
 # Introdução aos Algoritmos com Rust
 
+**Parte 1** Introdução  
+[Parte 2 | Estruturas](https://github.com/ricardodarocha/Rust/edit/main/Curso/Rust.md)
+
 *instrutor Ricardo da Rocha Vitor ricardodarocha@outlook.com  
 Atividade Complementar - Curso de Rust
 UNIFAGOC - https://unifagoc.edu.br/
