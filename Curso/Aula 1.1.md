@@ -338,4 +338,144 @@ fn main() {
 }
 ```
 
+# Exercícios
+
+# Exercício 1 — Ownership com Variáveis
+
+## Objetivo
+
+Compreender como funciona a transferência de propriedade (*Ownership*) entre variáveis e como corrigir o problema utilizando *Borrowing*.
+
+---
+
+## Enunciado
+
+1. Crie uma variável `x` do tipo `String`.
+2. Transfira a propriedade para uma variável `y`.
+3. Tente imprimir `x`.
+4. Compile o programa e observe o erro.
+5. Consulte a documentação do erro utilizando:
+
+```bash
+rustc --explain E0382
+```
+
+6. Corrija o programa utilizando uma referência (`&`).
+7. Compile novamente e verifique que o programa executa corretamente.
+
+---
+
+# Solução
+
+## Passo 1 — Código com erro
+
+```rust
+fn main() {
+    let x = String::from("Rust");
+
+    let y = x;
+
+    println!("x = {}", x);
+    println!("y = {}", y);
+}
+```
+
+Ao compilar:
+
+```bash
+cargo run
+```
+
+O compilador exibirá uma mensagem semelhante a:
+
+```text
+error[E0382]: borrow of moved value: `x`
+```
+
+---
+
+## Passo 2 — Entendendo o erro
+
+Quando executamos:
+
+```rust
+let y = x;
+```
+
+A propriedade da `String` é transferida para `y`.
+
+Após essa linha:
+
+* ❌ `x` deixa de ser válida.
+* ✅ `y` passa a ser a única proprietária da `String`.
+
+Por isso, o compilador impede o acesso a `x`.
+
+---
+
+## Passo 3 — Consultando a documentação
+
+Execute:
+
+```bash
+rustc --explain E0382
+```
+
+A documentação explica que o erro ocorre quando tentamos utilizar um valor cuja propriedade já foi movida para outra variável.
+
+---
+
+## Passo 4 — Corrigindo com Borrowing
+
+```rust
+fn main() {
+    let x = String::from("Rust");
+
+    let y = &x;
+
+    println!("x = {}", x);
+    println!("y = {}", y);
+}
+```
+
+Saída:
+
+```text
+x = Rust
+y = Rust
+```
+
+---
+
+## O que mudou?
+
+Antes:
+
+```rust
+let y = x;
+```
+
+A propriedade era transferida para `y`.
+
+Agora:
+
+```rust
+let y = &x;
+```
+
+`y` recebe apenas uma **referência** para a `String`.
+
+Assim:
+
+* `x` continua sendo a proprietária.
+* `y` apenas empresta o valor.
+* Nenhuma cópia da `String` é realizada.
+
+---
+
+## Conclusão
+
+Este exercício demonstra uma das principais garantias de segurança do Rust: **um valor possui apenas um proprietário por vez**. Quando precisamos apenas acessar um valor sem assumir sua propriedade, utilizamos **Borrowing** por meio de referências (`&`). Dessa forma, o compilador garante segurança de memória sem necessidade de coleta de lixo (*Garbage Collector*).
+
+
 Nesse caso, a função apenas recebe uma referência, mantendo a propriedade da `String` com a função `main`.
