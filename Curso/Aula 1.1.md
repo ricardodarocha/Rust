@@ -2,16 +2,16 @@
 
 ## 1. Criando um novo projeto
 
-Crie um projeto chamado **compilador**:
+Crie um projeto chamado **aula1**:
 
 ```bash
-cargo new compilador
+cargo new aula1
 ```
 
 Acesse a pasta do projeto:
 
 ```bash
-cd compilador
+cd aula1
 ```
 
 ---
